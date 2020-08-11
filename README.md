@@ -1,4 +1,6 @@
 # neo4j
+Graph database
+
 
 match (n)-[r]->(m) where id(r)=10 delete(r)
 
