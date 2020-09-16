@@ -1,0 +1,13 @@
+
+match(m)-[r]->(n)delete(r)delete(m)delete(n); 
+create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:'Pareto'});
+
+create (cancer:Maladie{name:'CANCER',type:'entity'});
+create (cancerColon:Maladie{name:'CANCERcolon',type:'entity'});
+create (cancerColon{age:50})-[:relatedTo]->(cancer)->(selles); 
+create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787
+'})-[:relatedTo]->(cancerColon)
+//photogrammetry FunArcheo, Blender
+//CSP-COP -> placement > heuristiques
+//IA -> non supervisé 
+
