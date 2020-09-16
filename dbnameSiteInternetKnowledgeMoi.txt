@@ -1,4 +1,6 @@
-match(m)-[r]->(n)delete(r)delete(m)delete(n); 
+match(m)-[r]->(n)delete(r);
+match(m)delete(m);
+
 create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:'Pareto'});
 
 create (cancer:Maladie{name:'CANCER',type:'entity'});
