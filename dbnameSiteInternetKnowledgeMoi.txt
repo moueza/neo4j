@@ -32,3 +32,6 @@ return tatou,tatFili,fili;
            //regression
            
 create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:GNS3{name:'GNS3',type:'example'});
+
+
+create (Hitlerum:AdHitlerum{name:'Reductio ad Hitlerum',type:'entity',url:''})
