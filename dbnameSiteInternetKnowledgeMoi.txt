@@ -3,24 +3,23 @@ match(m)delete(m);
 
 create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:'Pareto'});
 
-create (cancer:Maladie{name:'CANCER',type:'entity'});
-create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[:relatedTo]->(cancer)-[:relatedTo]->(selles);
+ create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:relatedTo]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:relatedTo]->(selles:Selles{neme:'Selles'});
  
 
 //create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'})-[:relatedTo]->(cancerColon)
 //TODO : by variable instead of properties
-create (cancerColonExample:cancerColonExample{idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
+create (cancerColonExample:cancerColonExample{name:'ccEx',idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
 match(ex),(cancColon)
   where ex.idd='cancerColonExample' and cancColon.idd='cancerColon'
-    create(cancerColonExample)-[rel:relatedTo]->(cancerColon)
-return ex,rel,cancColon;
+    create(ex)-[ccEx:relatedTo]->(cancColon)
+return ex,ccEx,cancColon;
 
-create (filigrane:filigrane{idd:'filigrane',name:'filigrane',type:'entity'});
+create (filigrane:filigrane{name:'filigrane',idd:'filigrane',type:'entity'});
 create (tatouageOptique:tatouageOptique{idd:'tatouageOptique',type:'entity'});
 match(tatou),(fili)
   where tatou.idd='tatouageOptique' and fili.idd='filigrane'
     create(tatou)-[tatFili:relatedTo]->(fili)
-return tatou,tatFili,fili
+return tatou,tatFili,fili;
 
 
 //photogrammetry FunArcheo, Blender
@@ -31,3 +30,5 @@ return tatou,tatFili,fili
 //auto ML
         //correlation
            //regression
+           
+create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:GNS3{name:'GNS3',type:'example'});
