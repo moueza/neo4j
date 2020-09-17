@@ -35,3 +35,6 @@ create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:
 
 
  create (Hitlerum:AdHitlerum{name:'Reductio ad Hitlerum',type:'entity',url:'https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum'});
+ 
+ create (flambagePoutre:FlambagePoutr{name:"network",type:"entity"})-[exPoutr: EX_POUTRE]->(:{name:"",entity:"FUN",type:"ref"});
+
