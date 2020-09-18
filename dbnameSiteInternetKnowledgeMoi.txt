@@ -32,9 +32,15 @@ return tatou,tatFili,fili;
            //regression
            
 create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:GNS3{name:'GNS3',type:'example'});
+ create (Hitlerum:AdHitlerum{name:"Reductio ad Hitlerum",type:"entity",url:"https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum"});
 
 
- create (Hitlerum:AdHitlerum{name:'Reductio ad Hitlerum',type:'entity',url:'https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum'});
- 
- create (flambagePoutre:FlambagePoutr{name:"network",type:"entity"})-[exPoutr: EX_POUTRE]->(:{name:"",entity:"FUN",type:"ref"});
+ create (flambagePoutre:FlambagePoutr{name:"network",type:"example"})-[exPoutr : EX_POUTRE:EXAMPLE]->(:SIMULATION{name:"SIMULATION",entity:"",type:"entity"});
 
+create (Gaia:Gaia{name:"GAIA",type:"entity"});
+create (Gaia1:Gaia:Example{name:"GAIA1",type:'example',url:"https://www.emploi.sncf.com/nos-offres-emploi/2020-7927/idOrigine/516"});
+create (Gaia2:Gaia:Example{name:"GAIA2",type:'example',url:"https://kizomba-elegance.com/"});
+match(tatou),(tatou2),(fili)
+  where tatou.name='GAIA1' and tatou2.name='GAIA2' and fili.name='GAIA'
+    create(tatou)-[gaia1:RELATED_TO]->(fili) create(tatou2)-[gaia2:RELATED_TO]->(fili)
+return tatou,tatou2,fili,gaia1, gaia2      ;
