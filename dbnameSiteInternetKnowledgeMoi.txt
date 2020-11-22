@@ -112,7 +112,15 @@ create (:Entity{name:'',idd:'bifurcation', type:'entity'});
  create (:Entity{name:'',idd:'intelligence',type:'entity'});
  MATCH (a), (b) WHERE a.idd = "bifurcation" AND b.idd = "intelligence" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
 
+ create (:Example{idd:'This equation will change how you see the world (the logistic map)',url: "https://youtu.be/ovJcsL7vyrk?t=942",idd:'intelligence',type:'example'});
+ MATCH (a), (b) WHERE a.idd = "bifurcation" AND b.idd = "This equation will change how you see the world (the logistic map)" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
 
+create (:Entity{name:'',idd:'tradingOptions', type:'entity'});
+MATCH (a), (b) WHERE a.idd = "bifurcation" AND b.idd = "tradingOptions" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+create (:Entity{name:'',idd:'random', type:'entity'});
+create (:Entity{name:'',idd:'tradingStochastics', type:'entity'});
+MATCH (a), (b) WHERE a.idd = "random" AND b.idd = "tradingStochastics" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
 
 
  create (lpam:Isbn{ident:"La physique avec Maple",name:"La physique avec Maple",type:"isbn",isbnValue:"2-7298-7948-X",isbnCanonique:"",sumUp:"Physique, Chimie, Fractales et Chaos"});
