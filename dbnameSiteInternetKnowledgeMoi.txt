@@ -12,14 +12,14 @@ create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:
 create (cancerColonExample:cancerColonExample{name:'ccEx',idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
 match(ex),(cancColon)
   where ex.idd='cancerColonExample' and cancColon.idd='cancerColon'
-    create(ex)-[ccEx:relatedTo]->(cancColon)
+    create(ex)-[ccEx:RELATED_TO]->(cancColon)
 return ex,ccEx,cancColon;
 
 create (filigrane:filigrane{name:'filigrane',idd:'filigrane',type:'entity'});
 create (tatouageOptique:tatouageOptique{idd:'tatouageOptique',type:'entity'});
 match(tatou),(fili)
   where tatou.idd='tatouageOptique' and fili.idd='filigrane'
-    create(tatou)-[tatFili:relatedTo]->(fili)
+    create(tatou)-[tatFili:RELATED_TO]->(fili)
 return tatou,tatFili,fili;
 
 
@@ -28,6 +28,8 @@ return tatou,tatFili,fili;
 //IA -> non supervisé
 //      segmentation url
 //ML tranfert
+
+create (:Entity{name:"Auto",type:"entity"});
 //auto ML
         //autocorrelation
            //autoregression
@@ -49,13 +51,55 @@ return tatou,tatou2,fili,gaia1, gaia2      ;
 //Pascal ....isbn Informatique
       //PhysiqueSimu en Pa
       
-//fractales 
-//lagrangien 
-//calculVariations
-//geodesiques 
+ 
+create (:Entity{name:'',idd:'fractales',type:'entity'});
+
+ 
+create (:Entity{name:'',idd:'lagrange',nameFr:"lagrangien",nameEn:"lagrangian",type:'entity'});
+
+ 
+create (:Entity{name:'',idd:'variationsCalculus',nameFr:"calcul de variations",nameEn:"variations calculus",type:'entity'});
+
+  
+create (:Entity{name:'',idd:'geodesics',type:'entity'});
+create (:Entity{name:'',idd:'fluxGeodesique',nameFr:"flux geodesique",nameEn:"",type:'entity'});
+create (:Entity{name:'',idd:'courbeGauche',nameFr:"courbe gauche",nameEn:"",type:'entity'});
+create (:Entity{name:'',idd:'tangent',nameFr:"",nameEn:"tangent",type:'entity'});
+
+create (:Entity{name:'',idd:'quaternion', type:'entity'});
+create (:Entity{name:'',idd:'rotation', type:'entity'});
+create (:Entity{name:'',idd:'infographie', type:'entity'});
+
+    MATCH (a), (b) WHERE a.idd = "rotation" AND b.idd = "infographie" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+create (:Entity{name:'',idd:'spin', type:'entity'});
+create (:Entity{name:'',idd:'orbitale', type:'entity'});
+
+create (:Entity{name:'',idd:'Blender3D', type:'entity'});
+    MATCH (a), (b) WHERE a.idd = "quaternion" AND b.idd = "Blender3D" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+create (:Entity{name:'',idd:'master', type:'entity'});
+create (:Entity{name:'',idd:'ALMA', type:'entity'});
+ MATCH (a), (b) WHERE a.idd = "master" AND b.idd = "ALMA" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+create (:Entity{name:'',idd:'ORO', type:'entity'});
+ MATCH (a), (b) WHERE a.idd = "master" AND b.idd = "ORO" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+
 //eqImplicit 
-//eq fxel(z)
+
+create (:Entity{name:'',idd:'eqFxelZ', type:'entity'});
+create (:Entity{name:'',idd:'eqFxelPure', type:'entity'});
+create (:Entity{name:'',idd:'eqFxelPureEx', text:"f(x+1)=2*f(x)+1",latexText:"",type:'example'});
+ MATCH (a), (b) WHERE a.idd = "eqFxelPure" AND b.idd = "eqFxelPureEx" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+
 //bifurcation >ML
+create (:Entity{name:'',idd:'bifurcation', type:'entity'});
+ create (:Entity{name:'',idd:'intelligence',type:'entity'});
+ MATCH (a), (b) WHERE a.idd = "bifurcation" AND b.idd = "intelligence" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
+
 
 
  create (lpam:Isbn{ident:"La physique avec Maple",name:"La physique avec Maple",type:"isbn",isbnValue:"2-7298-7948-X",isbnCanonique:"",sumUp:"Physique, Chimie, Fractales et Chaos"});
@@ -67,11 +111,15 @@ return tatou,tatou2,fili,gaia1, gaia2      ;
    create (p168:page{ident:"La physique avec Maplep168",name:"",type:"page"});
     MATCH (a), (b) WHERE a.ident = "La physique avec Maple" AND b.ident = "La physique avec Maplep168" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
 
-create (:Entity{name:'',idd:'implicitEq',type:'entity'});
-create (:Entity{name:'',idd:'bifurcation',type:'entity'});
-    MATCH (a), (b) WHERE a.ident = "La physique avec Maplep168" AND b.idd = "bifurcation" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+
+     MATCH (a), (b) WHERE a.ident = "La physique avec Maplep168" AND b.idd = "bifurcation" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
     MATCH (a), (b) WHERE a.ident = "La physique avec Maplep138" AND b.idd = "implicitEq" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
 
  //AUTOcatalytique p162
+   create (p162:Page{idd:"La physique avec Maplep162",type:"page"});
+MATCH (a), (b) WHERE a.ident = "La physique avec Maple" AND b.ident = "La physique avec Maplep162" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+create (:Entity:Auto{name:'',idd:'autocatalytique', type:'entity'});
+MATCH (a), (b) WHERE a.idd = "La physique avec Maplep162" AND b.idd = "autocatalytique" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+
             
             
