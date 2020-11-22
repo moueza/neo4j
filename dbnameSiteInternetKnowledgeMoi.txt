@@ -3,9 +3,9 @@
 match(m)-[r]->(n)delete(r);
 match(m)delete(m);
 
-create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:'Pareto'});
+create (:Metaheuristiques{name:'Metaheuristiques'})-[:RELATED_TO]->(:Pareto{name:'Pareto'});
 
- create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:relatedTo]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:RELATED_TO]->(selles:Selles{neme:'Selles'});
+ create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:RELATED_TO]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:RELATED_TO]->(selles:Selles{neme:'Selles'});
  
 
 //create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'})-[:RELATED_TO]->(cancerColon)
