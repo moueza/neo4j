@@ -62,9 +62,16 @@ return tatou,tatou2,fili,gaia1, gaia2      ;
   create (p138:Page{ident:"La physique avec Maplep138",name:"p138",type:"page"});
 //trading stochastique
 // MATCH (a), (b) WHERE a.Name = "A Computer Science Portal" AND b.Name = "" CREATE (a)-[r:edutech]->(b) RETURN r.
- MATCH (a), (b) WHERE a.ident = "" AND b.ident = "La physique avec Maplep138" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+ MATCH (a), (b) WHERE a.ident = "La physique avec Maple" AND b.ident = "La physique avec Maplep138" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
 
    create (p168:page{ident:"La physique avec Maplep168",name:"",type:"page"});
+    MATCH (a), (b) WHERE a.ident = "La physique avec Maple" AND b.ident = "La physique avec Maplep168" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+
+create (:Entity{name:'',idd:'implicitEq',type:'entity'});
+create (:Entity{name:'',idd:'bifurcation',type:'entity'});
+    MATCH (a), (b) WHERE a.ident = "La physique avec Maplep168" AND b.idd = "bifurcation" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+    MATCH (a), (b) WHERE a.ident = "La physique avec Maplep138" AND b.idd = "implicitEq" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+
  //AUTOcatalytique p162
             
             
