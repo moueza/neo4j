@@ -23,20 +23,29 @@ match(tatou),(fili)
     create(tatou)-[tatFili:RELATED_TO]->(fili)
 return tatou,tatFili,fili;
 
+create (:Entity{idd:'master1SyntheseImages',type:'entity'});
+ MATCH (a), (b) WHERE a.idd = "tatouageOptique" AND b.idd = "master1SyntheseImages" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
 
 //photogrammetry FunArcheo, Blender
 //CSP-COP -> placement > heuristiques
+//                    > trading Portfolio
 //IA -> non supervisé
-//      segmentation url
+//      segmentation url -> Antlr, Lex Yacc
 //ML tranfert
 
-create (:Entity{name:"Auto",type:"entity"});
-//auto ML
+create (:Entity{idd:"Auto",type:"entity"});
+create (:Entity:Auto:TF{idd:"AutoML",type:"entity"});
+ MATCH (a), (b) WHERE a.idd = "Auto" AND b.idd = "AutoML" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+create (:Entity:TF{idd:"TransfertLearning",type:"entity"});
+ MATCH (a), (b) WHERE a.idd = "AutoML" AND b.idd = "TransfertLearning" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+
         //autocorrelation
            //autoregression
            
 create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:GNS3{name:'GNS3',type:'example'});
- create (Hitlerum:AdHitlerum{name:"Reductio ad Hitlerum",type:"entity",url:"https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum"});
+ create (Hitlerum:AdHitlerum{name:"Reductio ad Hitlerum",lang:"latin",type:"entity",url:"https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum"});
+create (:Entity{name:"",breadcrumbs: "lorum ipsum maquette IT",lang:"latin",type:"entity",url:"https://fr.lipsum.com/"});
 
 
  create (flambagePoutre:FlambagePoutr:exPoutre:example{name:"network",type:"example"})-[exPoutr:RELATED_TO]->( :SIMULATION{name:"SIMULATION",entity:"",type:"entity"});
