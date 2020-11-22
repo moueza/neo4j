@@ -94,6 +94,9 @@ create (:Entity{name:'',idd:'ALMA', type:'entity'});
 
 create (:Entity{name:'',idd:'ORO', type:'entity'});
  MATCH (a), (b) WHERE a.idd = "master" AND b.idd = "ORO" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
+ create (:Entity{name:'',idd:'RechercheOperationnelle', type:'entity'});
+
+ MATCH (a), (b) WHERE a.idd = "ORO" AND b.idd = "RechercheOperationnelle" CREATE (a)-[r:RELATED_TO]->(b) RETURN r;
 
 
 //eqImplicit 
