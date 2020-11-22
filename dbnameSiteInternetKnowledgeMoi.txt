@@ -1,3 +1,4 @@
+//isbn ex https://neo4j.com/docs/cypher-manual/current/administration/constraints/#administration-constraints-unique-nodes
 match(m)-[r]->(n)delete(r);
 match(m)delete(m);
 
@@ -44,3 +45,26 @@ match(tatou),(tatou2),(fili)
   where tatou.name='GAIA1' and tatou2.name='GAIA2' and fili.name='GAIA'
     create(tatou)-[gaia1:RELATED_TO]->(fili) create(tatou2)-[gaia2:RELATED_TO]->(fili)
 return tatou,tatou2,fili,gaia1, gaia2      ;
+
+//Pascal ....isbn Informatique
+      //PhysiqueSimu en Pa
+      
+//fractales 
+//lagrangien 
+//calculVariations
+//geodesiques 
+//eqImplicit 
+//eq fxel(z)
+//bifurcation >ML
+
+
+ create (lpam:Isbn{ident:"La physique avec Maple",name:"La physique avec Maple",type:"isbn",isbnValue:"2-7298-7948-X",isbnCanonique:"",sumUp:"Physique, Chimie, Fractales et Chaos"});
+  create (p138:Page{ident:"La physique avec Maplep138",name:"p138",type:"page"});
+//trading stochastique
+// MATCH (a), (b) WHERE a.Name = "A Computer Science Portal" AND b.Name = "" CREATE (a)-[r:edutech]->(b) RETURN r.
+ MATCH (a), (b) WHERE a.ident = "" AND b.ident = "La physique avec Maplep138" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
+
+   create (p168:page{ident:"La physique avec Maplep168",name:"",type:"page"});
+ //AUTOcatalytique p162
+            
+            
