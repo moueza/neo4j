@@ -5,10 +5,10 @@ match(m)delete(m);
 
 create (:Metaheuristiques{name:'Metaheuristiques'})-[:relatedTo]->(:Pareto{name:'Pareto'});
 
- create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:relatedTo]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:relatedTo]->(selles:Selles{neme:'Selles'});
+ create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:relatedTo]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:RELATED_TO]->(selles:Selles{neme:'Selles'});
  
 
-//create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'})-[:relatedTo]->(cancerColon)
+//create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'})-[:RELATED_TO]->(cancerColon)
 //TODO : by variable instead of properties
 create (cancerColonExample:cancerColonExample{name:'ccEx',idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
 match(ex),(cancColon)
@@ -43,7 +43,7 @@ create (:Entity:TF{idd:"TransfertLearning",type:"entity"});
         //autocorrelation
            //autoregression
            
-create (network:network{name:'network',type:'entity'})-[net:relatedTo]->  (GNS3:GNS3{name:'GNS3',type:'example'});
+create (network:network{name:'network',type:'entity'})-[net:RELATED_TO]->  (GNS3:GNS3{name:'GNS3',type:'example'});
  create (Hitlerum:AdHitlerum{name:"Reductio ad Hitlerum",lang:"latin",type:"entity",url:"https://fr.wikipedia.org/wiki/Reductio_ad_Hitlerum"});
 create (:Entity{name:"",breadcrumbs: "lorum ipsum maquette IT",lang:"latin",type:"entity",url:"https://fr.lipsum.com/"});
 
