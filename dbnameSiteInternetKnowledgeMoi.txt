@@ -141,5 +141,6 @@ MATCH (a), (b) WHERE a.idd = "random" AND b.idd = "tradingStochastics" CREATE (a
 MATCH (a), (b) WHERE a.ident = "La physique avec Maple" AND b.ident = "La physique avec Maplep162" CREATE (a)-[r:CONTAINS]->(b) RETURN r;
 
 create (autocat:Entity:Auto{name:'',idd:'autocatalytique', type:'entity'});
+//bug #8 https://stackoverflow.com/questions/64949795/neo4j-match-by-user-defined-variable
 CREATE (p162)-[r:CONTAINS]->(autocat) RETURN r;
 //kubernetes
