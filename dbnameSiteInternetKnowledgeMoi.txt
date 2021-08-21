@@ -1,3 +1,4 @@
+//TODO delete
 //public-knowledge-graph-neo4j-moueza-peter
 //isbn ex https://neo4j.com/docs/cypher-manual/current/administration/constraints/#administration-constraints-unique-nodes
 match(m)-[r]->(n)delete(r);
