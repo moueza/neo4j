@@ -154,5 +154,8 @@ create (it:Entity:IT{name:'IT',idd:'IT',
  
 create (parallelism:IT{name:'parallelism',idd:'parallelism',en:'parallelism',fr:'parallelism',
  type:'speciality',comment:'concurrency, starvation,sync'});
+  CREATE (it)-[r:CONTAINS]->(parallelism) RETURN r;
+ 
  create (compiler:IT{name:'compiler',idd:'compiler',en:'compiler',fr:'compilateur',
  type:'speciality',comment:'stack, heap, pipe'});
+ CREATE (it)-[r:CONTAINS]->(compiler) RETURN r;
