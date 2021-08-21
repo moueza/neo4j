@@ -144,3 +144,9 @@ create (autocat:Entity:Auto{name:'',idd:'autocatalytique', type:'entity'});
 //bug #8 https://stackoverflow.com/questions/64949795/neo4j-match-by-user-defined-variable
 CREATE (p162)-[r:CONTAINS]->(autocat) RETURN r;
 //kubernetes
+
+create (it:Entity:IT{name:'IT',idd:'IT',
+ type:'entity'});
+ create (fuzzyLogic:Entity:IT{name:'fuzzy logic',idd:'fuzzy',en:'fuzzy logic',fr:'logique floue',
+ type:'speciality'});
+ CREATE (it)-[r:CONTAINS]->(fuzzyLogic) RETURN r;
