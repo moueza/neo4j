@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-68N7B5993L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-68N7B5993L');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+
+
+
+    <meta name="description" content="Site personnel principal de Peter MOUEZA à Nantes">
+    <meta name="keywords"
+          content="Peter, MOUEZA, Nantes, BOSSIS, Homniserv, vue, VueJS">
+    <meta name="author" content="Peter MOUEZA">
+    <meta name="theme-color" content="#00FF00">
+
+    <!--   -->
+    <!-- https://support.google.com/webmasters/answer/139066  adresses canoniques-->
+    <link hreflang="fr" rel="canonical" href="https://moueza.000webhostapp.com" />
+
+    <!--http://getbootstrap.com/css/  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/ld+json">
+      {
+	  "@context": "http://schema.org",
+	  "@type": "NewsArticle",
+	  "headline": "Open-source framework for publishing content",
+	  "datePublished": "2015-10-07T12:02:41Z",
+	  "image": [
+	      "logo.jpg"
+	  ]
+      }
+    </script>
+
+    <!--TODO initiale with .js-->
+    <title></title>
+    
+  </head>
+
+
+  
+  <body>
+    <div id="app">
+
+      <h1>{{ h1 }}</h1>
+      v = 08
+      <br>
+      {{ message }}
+   <br>
+   <a href="dbnameSiteInternetKnowledgeMoi.txt">Knoledge graph dbnameSiteInternetKnowledgeMoi.txt</a>
+      <div><a href="https://moueza.gitlab.io/openclassrooms-6390311-creez-une-application-web-avec-vue.js/">Modele</a></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+          el: '#app',
+          data: {
+              message: 'Bonjour Openclassrooms clap',//String
+              h1: 'Neo4j',
+              answerToLife: 42,//number
+              groceries: ['pommes', 'bananes', 'noix de coco'],//Arrays
+              timeForFlunch: false,//Boolean
+              info: {//object
+                  topic: 'VueJS',
+                  length: 5
+              },
+
+              //TODO compute here
+              //costOfApples:2.5/20,
+              costOfApples: 2.5 / 20,
+
+              costOfBananas: 2,
+              costOfCoconuts: 1.5
+          },
+	  computed: {
+              totalAmount() {
+                  return this.costOfApples + this.costOfBananas + this.costOfCoconuts
+              }
+          }
+
+      })
+    </script>
+  </body>
+
+</html>
+
+
