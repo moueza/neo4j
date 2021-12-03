@@ -159,3 +159,11 @@ create (parallelism:IT{name:'parallelism',idd:'parallelism',en:'parallelism',fr:
  create (compiler:IT{name:'compiler',idd:'compiler',en:'compiler',fr:'compilateur',
  type:'speciality',comment:'stack, heap, pipe'});
  CREATE (it)-[r:CONTAINS]->(compiler) RETURN r;
+
+
+create (formalProgramsProof:Entity:IT:Formal{name:'formalProgramsProof',comment:"idd = name",
+ type:'entity'});
+  CREATE (it)-[r:CONTAINS]->(formalProgramsProof) RETURN (r);
+
+create (constraintsProgrammation:Entity:IT:CSP{ type:'entity'});
+CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
