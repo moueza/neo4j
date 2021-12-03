@@ -167,3 +167,6 @@ create (formalProgramsProof:Entity:IT:Formal{name:'formalProgramsProof',comment:
 
 create (constraintsProgrammation:Entity:IT:CSP{ type:'entity'});
 CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
+
+
+create (statueStGabriel:Art:Statue:Sculpture{ type:'instance',comment:"statue novembre 2021 saint sables d Olonne",alias:"Gabriel",alias:"Michel",lieu:"Les Sables d'Olonnes"});
