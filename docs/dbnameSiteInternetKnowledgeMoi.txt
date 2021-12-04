@@ -179,6 +179,11 @@ CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
 
 create (statueStGabriel:Art:Statue:Sculpture{ type:'instance',comment:"statue novembre 2021 saint sables d Olonne",alias:"Gabriel",alias:"Michel",lieu:"Les Sables d'Olonnes",Google:"statue novembre 2021 saint sables"});
 
+create (mortDeSenequeDavid:Art{comment:"mort de seneque david veines",
+ type:'art'});
+ 
+ 
+ 
 create (quantum:Entity:IT{ type:'entity'});
 create (parallelism:Entity:IT{ type:'entity'});
 create (concurrency:Entity:IT{ type:'entity'});
