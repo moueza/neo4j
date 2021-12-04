@@ -205,3 +205,6 @@ create (cloud:Entity:IT{ type:'entity'});
 
 create (covid19omicron:Biology:Medicine:Virus:Corona{ type:'instance'});
 
+
+create (generativeProgrammation:IT:Cpp:Language{ type:'instance',comment:"C++"});
+
