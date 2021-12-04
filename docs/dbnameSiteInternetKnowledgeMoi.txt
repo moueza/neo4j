@@ -202,3 +202,6 @@ create (btree:Entity:IT:Algorithm{ type:'instance'});
 
 create (cloud:Entity:IT{ type:'entity'});
 
+
+create (covid19omicron:Biology:Medicine:Virus:Corona{ type:'instance'});
+
