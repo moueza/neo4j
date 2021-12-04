@@ -74,7 +74,9 @@ create (:Entity{name:'',idd:'variationsCalculus',nameFr:"calcul de variations",n
   
 create (:Entity{name:'',idd:'geodesics',type:'entity'});
 create (:Entity{name:'',idd:'fluxGeodesique',nameFr:"flux geodesique",nameEn:"",type:'entity'});
-create (:Entity{name:'',idd:'courbeGauche',nameFr:"courbe gauche",nameEn:"",type:'entity'});
+create (:Entity{name:'',idd:'courbeGauche',nameFr:"courbe gauche",nameEn:"",url:"https://homniserv.github.io/solenoid-3D-with-Scilab/
+",type:'entity'});
+
 create (:Entity{name:'',idd:'tangent',nameFr:"",nameEn:"tangent",type:'entity'});
 
 create (:Entity{name:'',idd:'quaternion', type:'entity'});
