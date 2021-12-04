@@ -170,3 +170,22 @@ CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
 
 
 create (statueStGabriel:Art:Statue:Sculpture{ type:'instance',comment:"statue novembre 2021 saint sables d Olonne",alias:"Gabriel",alias:"Michel",lieu:"Les Sables d'Olonnes",Google:"statue novembre 2021 saint sables"});
+
+create (quantum:Entity:IT{ type:'entity'});
+create (parallelism:Entity:IT{ type:'entity'});
+create (concurrency:Entity:IT{ type:'entity'});
+create (deadlock:Entity:IT{ type:'entity'});
+create (terminaison:Entity:IT{ type:'entity'});
+
+create (lamport:Entity:IT:Clock:Time{ type:'entity'});
+create (lamport:Entity:IT:Clock:Time{ type:'entity'});
+
+create (front:Entity:IT:Algorithm{ type:'entity'});
+create (sentinel:Entity:IT:Algorithm{ type:'entity'});
+create (sorting:Entity:IT:Algorithm{ type:'entity'});
+create (graph:Entity:IT:Algorithm{ type:'entity'});
+create (tree:Entity:IT:Algorithm{ type:'entity'});
+create (btree:Entity:IT:Algorithm{ type:'instance'});
+
+create (cloud:Entity:IT{ type:'entity'});
+
