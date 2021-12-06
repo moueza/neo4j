@@ -6,12 +6,12 @@ match(m)delete(m);
 
 create (:Metaheuristiques{name:'Metaheuristiques'})-[:RELATED_TO]->(:Pareto{name:'Pareto'});
 
- create (cancerColon:Maladie{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:RELATED_TO]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:RELATED_TO]->(selles:Selles{neme:'Selles'});
+ create (cancerColon:Maladie:Medicine{name:'CANCERcolon',type:'entity',age:50,idd:'cancerColon'})-[cc:RELATED_TO]-> (cancer:Maladie{name:'CANCER',type:'entity'})-[ccSell:RELATED_TO]->(selles:Selles{neme:'Selles'});
  
 
 //create (cancerColonExample{type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'})-[:RELATED_TO]->(cancerColon)
 //TODO : by variable instead of properties
-create (cancerColonExample:cancerColonExample{name:'ccEx',idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
+create (cancerColonExample:CancerColonExample{name:'ccEx',idd:'cancerColonExample',type:'example',url:'https://www.facebook.com/jeanmarc.majeau.9/videos/657545401536787'});
 match(ex),(cancColon)
   where ex.idd='cancerColonExample' and cancColon.idd='cancerColon'
     create(ex)-[ccEx:RELATED_TO]->(cancColon)
@@ -223,3 +223,12 @@ create (origin)-[:EXPANDS_TO]->(humanEvolution);
 
 create (sanGoku:3D:Cartoons{ type:'instance',lang:".jp"});
 create (kenLeSurvivant:3D:Cartoons:ChineseMedicine:VitalPoints{ type:'instance',lang:".jp"});
+
+
+
+create (mathematics:Mathematics:Entity{ type:'entity'});
+create (numericAnalysis:Mathematics{ type:'instance'});
+create (numericSimulation:Mathematics{ type:'instance'});
+create (fortran:Mathematics{ type:'instance'});
+CREATE (numericAnalysis)-[r:CONTAINS]->(fortran) RETURN (r);
+
