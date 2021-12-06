@@ -181,7 +181,7 @@ CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
 create (generativeProgrammation:IT:Cpp:Language{ type:'instance',comment:"C++"});
 
 create (jeuDeLaVie:IT{ type:'instance',comment:"",url:"https://en.wikipedia.org/wiki/Portal:Mathematics");
-create (errorCorrection:IT{ type:'instance',comment:"",url:"wik",url:"https://github.com/moueza/isbn-978.2.85428.780.6-Programmation-fonctionnelle-Appliquee-aux-calculs-scientifiques-tome-1/blob/main/index.html"});
+create (errorCorrection:IT{ type:'instance',comment:"Cellular automata have also been applied to design error correction codes",url:"https://en.wikipedia.org/wiki/Cellular_automaton",url:"https://github.com/moueza/isbn-978.2.85428.780.6-Programmation-fonctionnelle-Appliquee-aux-calculs-scientifiques-tome-1/blob/main/index.html"});
 CREATE (jeuDeLaVie)-[r:CONTAINS]->(errorCorrection) RETURN (r);
 
 
