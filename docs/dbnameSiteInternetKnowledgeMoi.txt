@@ -231,4 +231,4 @@ create (numericAnalysis:Mathematics{ type:'instance'});
 create (numericSimulation:Mathematics{ type:'instance'});
 create (fortran:Mathematics{ type:'instance'});
 CREATE (numericAnalysis)-[r:CONTAINS]->(fortran) RETURN (r);
-
+create (chainette:Mathematics{ type:'instance'});
