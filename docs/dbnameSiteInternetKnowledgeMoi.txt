@@ -177,6 +177,14 @@ create (constraintsProgrammation:Entity:IT:CSP{ type:'entity'});
 CREATE (it)-[r:CONTAINS]->(constraintsProgrammation) RETURN (r);
 
 
+
+create (generativeProgrammation:IT:Cpp:Language{ type:'instance',comment:"C++"});
+
+create (jeuDeLaVie:IT{ type:'instance',comment:"",url:"https://en.wikipedia.org/wiki/Portal:Mathematics");
+create (errorCorrection:IT{ type:'instance',comment:"",url:""});
+CREATE (jeuDeLaVie)-[r:CONTAINS]->(errorCorrection) RETURN (r);
+
+
 create (statueStGabriel:Art:Statue:Sculpture{ type:'instance',comment:"statue novembre 2021 saint sables d Olonne",alias:"Gabriel",alias:"Michel",lieu:"Les Sables d'Olonnes",Google:"statue novembre 2021 saint sables"});
 
 create (mortDeSenequeDavid:Art{comment:"mort de seneque david veines",
@@ -206,5 +214,12 @@ create (cloud:Entity:IT{ type:'entity'});
 create (covid19omicron:Biology:Medicine:Virus:Corona{ type:'instance'});
 
 
-create (generativeProgrammation:IT:Cpp:Language{ type:'instance',comment:"C++"});
+create (origin:Entity{ type:'entity'});
+create (aliensTheorie{ type:'instance',comments:"cosmonautes, ile de java",location:"Java",location:"Hawai",src:"RMC Decouverte"});
+create (origin)-[:EXPANDS_TO]->(aliensTheorie);
+create (embryology:Entity:Medicine:Biology{ type:'entity',comments:"life previous steps"});
+create (humanEvolution:Entity:Biology:Hominides{ type:'entity',comments:"",url:"https://eol.org/",url:"https://species.wikimedia.org/wiki/Main_Page"});
+create (origin)-[:EXPANDS_TO]->(humanEvolution);
 
+create (sanGoku:3D:Cartoons{ type:'instance',lang:".jp"});
+create (kenLeSurvivant:3D:Cartoons:ChineseMedicine:VitalPoints{ type:'instance',lang:".jp"});
