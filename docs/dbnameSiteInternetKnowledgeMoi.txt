@@ -1,5 +1,4 @@
 //TODO delete
-//public-knowledge-graph-neo4j-moueza-peter
 //isbn ex https://neo4j.com/docs/cypher-manual/current/administration/constraints/#administration-constraints-unique-nodes
 match(m)-[r]->(n)delete(r);
 match(m)delete(m);
@@ -212,6 +211,8 @@ create (cloud:Entity:IT{ type:'entity'});
 
 
 create (covid19omicron:Biology:Medicine:Virus:Corona{ type:'instance'});
+create (blenderOmicron:Biology:Medicine:Virus:Corona:Blender:D3D{ type:'instance',url:"https://gitlab.com/moueza/blender/-/blob/master/BIOLOGY/VIRUS/OMICRON/omicron-covid-19-corona-virus-Fluo.blend"});
+CREATE path=(blenderOmicron)-[r:CONTAINS]->(covid19omicron) RETURN path;
 
 
 create (origin:Entity{ type:'entity'});
@@ -221,8 +222,8 @@ create (embryology:Entity:Medicine:Biology{ type:'entity',comments:"life previou
 create (humanEvolution:Entity:Biology:Hominides{ type:'entity',comments:"",url:"https://eol.org/",url:"https://species.wikimedia.org/wiki/Main_Page"});
 create (origin)-[:EXPANDS_TO]->(humanEvolution);
 
-create (sanGoku:3D:Cartoons{ type:'instance',lang:".jp"});
-create (kenLeSurvivant:3D:Cartoons:ChineseMedicine:VitalPoints{ type:'instance',lang:".jp"});
+create (sanGoku:D3D:Cartoons{ type:'instance',lang:".jp"});
+create (kenLeSurvivant:D3D:Cartoons:ChineseMedicine:VitalPoints{ type:'instance',lang:".jp"});
 create (pokemon:Neo4J:Database:IT{ type:'instance',lang:".jp",url:"https://neo4j.com/blog/pokegraph-gotta-graph-em-all/",url:"https://www.youtube.com/watch?v=B5tn1GPEQC8"});
 
 
