@@ -231,7 +231,7 @@ create (pokemon:Neo4J:Database:IT{ type:'instance',lang:".jp",url:"https://neo4j
 create (mathematics:Mathematics:Entity{ type:'entity'});
 create (numericAnalysis:Mathematics{ type:'instance'});
 create (numericSimulation:Mathematics{ type:'instance'});
-create (fortran:Mathematics{ type:'instance'});
+create (fortran:Mathematics{ type:'instance',url:'https://moueza.gitlab.io/fortran/'});
 CREATE (numericAnalysis)-[r:CONTAINS]->(fortran) RETURN (r);
 create (chainette:Mathematics:Analysis{ type:'instance'});
 
@@ -239,4 +239,8 @@ create (fibonacciSeries:Mathematics:Analysis:Series{ type:'instance'});
 
 create (virologieInformatique:IT{ type:'instance'});
 
- 
+create (sentinel:IT:Algorithm{ type:'instance'})
+create (stack:IT:Algorithm{ type:'instance'})
+create (pipe:IT:Algorithm{ type:'instance'})
+create (clique:IT:Algorithm{ type:'instance'}) 
+create (SAT:IT:Algorithm{ type:'instance'}) 
