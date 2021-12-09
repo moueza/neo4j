@@ -244,3 +244,5 @@ create (stack:IT:Algorithm{ type:'instance'})
 create (pipe:IT:Algorithm{ type:'instance'})
 create (clique:IT:Algorithm{ type:'instance'}) 
 create (SAT:IT:Algorithm{ type:'instance'}) 
+
+create (phylogeny:Medicine:Genetics{ type:'instance'}) 
