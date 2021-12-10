@@ -296,3 +296,6 @@ create (kizomba)-[:EXPANDS_TO]->(musicality);
 create (salsa)-[:EXPANDS_TO]->(SBK);
 create (bachata)-[:EXPANDS_TO]->(SBK);
 create (kizomba)-[:EXPANDS_TO]->(SBK);
+
+
+ create (mutuellesRosenweg:Money:State:Health:Assurance{ author:"Daniel Rosenweg",type:'entity',url:"https://www.youtube.com/watch?v=x1s6lMby2uE",location:""}) 
