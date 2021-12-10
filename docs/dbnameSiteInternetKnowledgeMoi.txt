@@ -249,3 +249,50 @@ create (phylogeny:Medicine:Genetics{ type:'instance'})
 
 
 create (droitAdiffuser:Rights{ type:'instance',url:"https://youtu.be/DS2SQWBDEm0?t=70"}) 
+
+create (dance{ type:'entity',url:"",location:""}) 
+
+create (salsa{ type:'entity',url:"",location:"Brasil"}) 
+create (dance)-[:EXPANDS_TO]->(salsa);
+
+
+create (bachata{ type:'entity',url:"",location:""}) 
+create (dance)-[:EXPANDS_TO]->(bachata);
+
+
+
+create (tango{ type:'entity',url:"",location:"Argentina"}) 
+create (dance)-[:EXPANDS_TO]->(tango);
+
+create (zouk{ type:'entity',url:"",location:"Caribbean"}) 
+create (dance)-[:EXPANDS_TO]->(zouk);
+
+
+create (semba:Africa{ type:'entity',url:"",location:"Africa"}) 
+create (dance)-[:EXPANDS_TO]->(semba);
+
+create (kizomba:Kizomba:Africa{ type:'entity',url:"",location:"Africa"}) 
+create (dance)-[:EXPANDS_TO]->(kizomba);
+
+create (kizombaDance:Kizomba:Dance{ type:'entity',url:""}) 
+create (kizomba)-[:EXPANDS_TO]->(kizombaDance);
+
+create (kizombaMusic:Kizomba:Music{ type:'entity',url:""}) 
+create (kizomba)-[:EXPANDS_TO]->(kizombaMusic);
+
+create (kizombaromantic0:Kizomba:Music:Romantic{ type:'instance',url:"https://www.youtube.com/watch?v=ttFF2qXZY3I&ab_channel=DjAnilson"}) 
+create (kizomba)-[:EXPANDS_TO]->(kizombaromantic0);
+
+create (kizombaUrban:Kizomba:Music{ type:'entity',url:""}) 
+create (kizomba)-[:EXPANDS_TO]->(kizombaUrban);
+
+create (kizombaTradi:Kizomba:Music{ type:'entity',url:""}) 
+create (kizomba)-[:EXPANDS_TO]->(kizombaTradi);
+
+create (musicality:Music{ type:'entity',url:""}) 
+create (kizomba)-[:EXPANDS_TO]->(musicality);
+
+ create (SBK{ type:'entity',url:"",location:""}) 
+create (salsa)-[:EXPANDS_TO]->(SBK);
+create (bachata)-[:EXPANDS_TO]->(SBK);
+create (kizomba)-[:EXPANDS_TO]->(SBK);
