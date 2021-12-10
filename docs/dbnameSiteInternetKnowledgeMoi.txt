@@ -246,3 +246,6 @@ create (clique:IT:Algorithm{ type:'instance'})
 create (SAT:IT:Algorithm{ type:'instance'}) 
 
 create (phylogeny:Medicine:Genetics{ type:'instance'}) 
+
+
+create (droitAdiffuser:Rights{ type:'instance',url:"https://youtu.be/DS2SQWBDEm0?t=70"}) 
