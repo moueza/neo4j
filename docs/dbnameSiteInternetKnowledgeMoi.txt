@@ -300,3 +300,11 @@ create (kizomba)-[:EXPANDS_TO]->(SBK);
  create (medicine:Medicine{ type:'entity',url:"",location:""}) 
  create (mutuellesRosenweg:Money:State:Health:Assurance{ comments:"book ",author:"Daniel Rosenweg",type:'entity',url:"https://www.youtube.com/watch?v=x1s6lMby2uE",location:""}) 
 create (medicine)-[:EXPANDS_TO]->(mutuellesRosenweg);
+
+CAD
+QCAD
+FreeCAD
+OpenSCAD
+
+B-Method
+By Models programmation
