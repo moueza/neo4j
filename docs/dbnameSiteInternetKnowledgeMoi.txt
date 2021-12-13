@@ -306,5 +306,12 @@ QCAD
 FreeCAD
 OpenSCAD
 
-B-Method
-By Models programmation
+ 
+ 
+
+ create (mda:IT{ type:'instance',url:"",location:""}) 
+create (it)-[:EXPANDS_TO]->(mda);
+
+ create (bmethod:IT{ type:'instance',url:"",location:"",comments:"formal programs proof"}) 
+create (it)-[:EXPANDS_TO]->(bmethod);
+
