@@ -301,13 +301,32 @@ create (kizomba)-[:EXPANDS_TO]->(SBK);
  create (mutuellesRosenweg:Money:State:Health:Assurance{ comments:"book ",author:"Daniel Rosenweg",type:'entity',url:"https://www.youtube.com/watch?v=x1s6lMby2uE",location:""}) 
 create (medicine)-[:EXPANDS_TO]->(mutuellesRosenweg);
 
-CAD
-QCAD
-FreeCAD
-OpenSCAD
+
+
+
+
 
  
+ create (cad:CAD:IT{ type:'instance',url:"",location:""}) 
+  create (QCAD:CAD:IT{ type:'instance',url:"",location:""}) 
+ create (FreeCAD:IT{ type:'instance',url:"",location:""}) 
+ create (OpenSCAD:IT{ type:'instance',url:"",location:""}) 
+
+   create (sciences:Sciences{ type:'instance',url:"",location:""}) 
+  create (mathematics:Mathematics{ type:'instance',url:"",location:""}) 
+
+
+ create (photogrammetry:Mathematics:IT:M3d{ type:'instance',url:"",location:""}) 
+https://www.youtube.com/watch?v=dWuaIv6UiVQ&list=PLvO6ge94oTpepnkfWQw_JszNP4m_AITol&index=6
+Blendermoi
+ PHOTOGRAMMETRY FROM DRONE http://www.keris-studio.fr/blog/?p=11851
+Monoscopic photogrammetry to obtain 3D models by a mobile device  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4881215/
  
+ create (trading:Mathematics:IT:Trading{ type:'instance',url:"",location:""}) 
+ create (stochastique:Mathematics:IT:Trading{ type:'instance',url:"",location:""}) 
+create (mathematics)-[:EXPANDS_TO]->(trading);
+create (stochastique)-[:EXPANDS_TO]->(trading);
+
 
  create (mda:IT{ type:'instance',url:"",location:""}) 
 create (it)-[:EXPANDS_TO]->(mda);
@@ -315,3 +334,4 @@ create (it)-[:EXPANDS_TO]->(mda);
  create (bmethod:IT{ type:'instance',url:"",location:"",comments:"formal programs proof"}) 
 create (it)-[:EXPANDS_TO]->(bmethod);
 
+inpi npi
