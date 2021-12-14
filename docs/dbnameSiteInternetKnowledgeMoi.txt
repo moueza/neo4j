@@ -367,8 +367,17 @@ create (ocl:IT{ type:'instance',url:"",location:""})
  
   create (freudErreurs:Psychology:Medicine{ type:'instance',url:"",location:""})
 
-publicitesDynamiques
- passagePommeraye Nantes  gateauNantaisVanille
+
+  create (publicitesDynamiques:IT:Dynamic{ type:'instance',url:"",location:""})
+  create (dynamicSystems:Mathematics:Dynamic{ type:'instance',url:"",location:""})
+  create (dynamicLanguages:IT:Dynamic{ type:'instance',url:"",location:"",comments:"Python"})
+
+  create (nantes:Town:Location{ type:'instance',url:"",location:""})
+  create (passagePommeraye:Nantes:Location{ type:'instance',url:"",location:""})
+  create (gateauNantaisVanille:Nantes:Location{ type:'instance',url:"",location:""})
+  create (nantes)-[:EXPANDS_TO]->(gateauNantaisVanille);
+
+ 
 
 
 thesisEinstein:Pdf 20pages
@@ -377,3 +386,15 @@ AObeausejour:AO:M3d
 AObmortAutonomeHangar12:AO:M3d
 
 Association
+
+  create (plastination:Anatomy{ type:'instance',url:"",location:"",comments:"Dr Von Haagen exposition"})
+ 
+   create (cooperation:Entity{ type:'entity',url:"",location:"",comments:""})
+     create (cooperation)-[:EXPANDS_TO]->(parallelism);
+
+  create (hanabi:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
+   create (cooperation)-[:EXPANDS_TO]->(hanabi);
+   
+     create (tock:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
+   create (cooperation)-[:EXPANDS_TO]->(tock);
+
