@@ -350,4 +350,16 @@ create (grammar)-[:EXPANDS_TO]->(bmethod);
 create (ocl:IT{ type:'instance',url:"",location:""}) 
   create (grammar)-[:EXPANDS_TO]->(ocl);
 
+ create (regression:Mathematics{ type:'instance',url:"",location:""}) 
+  create (interpolation:Mathematics{ type:'instance',url:"",location:""}) 
+  create (extrapolation:Mathematics{ type:'instance',url:"",location:""}) 
+  create ( auto-correlation:Mathematics{ type:'instance',url:"",location:""}) 
+  create (causation:Mathematics{ type:'instance',url:"",location:""}) 
+  create (matrixCalculus:Mathematics{ type:'instance',url:"",location:""}) 
+
  
+ 
+ 
+ 
+ 
+  create (freudErreurs:Psychology:Medicine{ type:'instance',url:"",location:""})
