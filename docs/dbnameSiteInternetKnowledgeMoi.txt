@@ -318,9 +318,15 @@ create (medicine)-[:EXPANDS_TO]->(mutuellesRosenweg);
 
  create (photogrammetry:Mathematics:IT:M3d{ type:'instance',url:"",location:""}) 
 https://www.youtube.com/watch?v=dWuaIv6UiVQ&list=PLvO6ge94oTpepnkfWQw_JszNP4m_AITol&index=6
-Blendermoi
- PHOTOGRAMMETRY FROM DRONE http://www.keris-studio.fr/blog/?p=11851
+
+https://github.com/moueza/stereo
+
+PHOTOGRAMMETRY FROM DRONE http://www.keris-studio.fr/blog/?p=11851
+
 Monoscopic photogrammetry to obtain 3D models by a mobile device  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4881215/
+  
+  Photogrammetry SDK - Calibration SDKhttp://www.linearis3d.com/sdk.html?gclid=Cj0KCQiAnuGNBhCPARIsACbnLzq-k6_w99w2nXUExjEW_sSAJ5hZ10lLipvP52mWyLa2aX4YlCO62sAaAurEEALw_wcB
+ 
  
  create (trading:Mathematics:IT:Trading{ type:'instance',url:"",location:""}) 
  create (stochastique:Mathematics:IT:Trading{ type:'instance',url:"",location:""}) 
