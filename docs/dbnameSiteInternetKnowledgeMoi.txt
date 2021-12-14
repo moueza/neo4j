@@ -341,3 +341,13 @@ create (it)-[:EXPANDS_TO]->(mda);
 create (it)-[:EXPANDS_TO]->(bmethod);
 
 inpi npi
+
+ create (grammar:IT{ type:'instance',url:"",location:""}) 
+create (grammar)-[:EXPANDS_TO]->(bmethod);
+ create (antlr:IT{ type:'instance',url:"",location:""}) 
+  create (grammar)-[:EXPANDS_TO]->(antlr);
+
+create (ocl:IT{ type:'instance',url:"",location:""}) 
+  create (grammar)-[:EXPANDS_TO]->(ocl);
+
+ 
