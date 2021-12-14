@@ -365,3 +365,4 @@ create (ocl:IT{ type:'instance',url:"",location:""})
   create (freudErreurs:Psychology:Medicine{ type:'instance',url:"",location:""})
 
 publicitesDynamiques
+ passagePommeraye Nantes  gateauNantaisVanille
