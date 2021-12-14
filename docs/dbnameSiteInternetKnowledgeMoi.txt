@@ -398,3 +398,4 @@ Association
      create (tock:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
    create (cooperation)-[:EXPANDS_TO]->(tock);
 
+CSP https://www.univ-montp3.fr/miap/~jq/OptionIA/cours/cspGoualard.pdf Cours 1 à 3 : Frédéric GOUALARD
