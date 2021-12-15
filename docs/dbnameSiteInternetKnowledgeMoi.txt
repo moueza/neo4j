@@ -311,21 +311,24 @@ create (medicine)-[:EXPANDS_TO]->(mutuellesRosenweg);
 
 
  
- create (cad:CAD:IT{ type:'instance',url:"",location:""}) 
-  create (QCAD:CAD:IT{ type:'instance',url:"",location:""}) 
- create (FreeCAD:IT{ type:'instance',url:"",location:""}) 
- create (OpenSCAD:IT{ type:'instance',url:"",location:""}) 
+ create (cad:CAD:IT{ type:'instance',url:"",location:""}) ;
+  create (QCAD:CAD:IT{ type:'instance',url:"",location:""}) ;
+ create (FreeCAD:IT{ type:'instance',url:"",location:""}) ;
+ create (OpenSCAD:IT{ type:'instance',url:"",location:""}) ;
 
-   create (sciences:Sciences{ type:'instance',url:"",location:""}) 
-  create (mathematics:Mathematics{ type:'instance',url:"",location:""}) 
+   create (sciences:Sciences{ type:'instance',url:"",location:""}) ;
+  create (mathematics:Mathematics{ type:'instance',url:"",location:""}) ;
 
 
- create (photogrammetry:Mathematics:IT:M3d{ type:'instance',url:"",location:""}) 
-https://www.youtube.com/watch?v=dWuaIv6UiVQ&list=PLvO6ge94oTpepnkfWQw_JszNP4m_AITol&index=6
+ create (photogrammetry:Mathematics:IT:M3d{ type:'instance',url:"",location:""}) ;
+ create (photogrammetryYoutube:Video:Mathematics:IT:M3d{ type:'instance',url:"https://www.youtube.com/watch?v=dWuaIv6UiVQ&list=PLvO6ge94oTpepnkfWQw_JszNP4m_AITol&index=6",location:""}) ;
+create (photogrammetry)-[:EXPANDS_TO]->(photogrammetryYoutube);
 
-https://github.com/moueza/stereo
+ create (photogrammetryMoi2:Me:Mathematics:IT:M3d{ type:'instance',url:"https://github.com/moueza/stereo",location:""}) ;
+create (photogrammetry)-[:EXPANDS_TO]->(photogrammetryMoi2);
 
-PHOTOGRAMMETRY FROM DRONE http://www.keris-studio.fr/blog/?p=11851
+  create (PHOTOGRAMMETRY FROM DRONE:Mathematics:IT:M3d{ type:'instance',url:"http://www.keris-studio.fr/blog/?p=11851",location:""}) ;
+create (photogrammetry)-[:EXPANDS_TO]->(PHOTOGRAMMETRY FROM DRONE);
 
 Monoscopic photogrammetry to obtain 3D models by a mobile device  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4881215/
   
