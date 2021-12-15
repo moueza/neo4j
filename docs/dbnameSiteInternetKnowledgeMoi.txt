@@ -378,14 +378,24 @@ create (ocl:IT{ type:'instance',url:"",location:""})
   create (nantes)-[:EXPANDS_TO]->(gateauNantaisVanille);
 
  
+     create (laennec:Person:Medicine{ ,url:"",location:"",comments:""})
+  create (nantes)-[:EXPANDS_TO]->(laennec);
+
+//mixed
+  create (laennec)-[:EXPANDS_TO]->(sthethoscope);
+
+ 
+     create (einstein:Person:Physics:Person{ url:"",location:"",comments:"",language:".de"})
+  create (einstein)-[:EXPANDS_TO]->(thesisEinstein:Pdf{ url:"",location:"",comments:"20pages",language:".de"});
+
+     create (AObeausejour:AO:D3d:IT{ url:"",location:"",comments:"",language:""})
+
+     create (AObmortAutonomeHangar12:AO:D3d:Blender:IT{ url:"",location:"",comments:"",language:""})
+
+ 
+     create (association:Uml:IT{ url:"https://community.neo4j.com/t/associations-in-neo4j/31221/2",location:"",comments:"",language:""})
 
 
-thesisEinstein:Pdf 20pages
-
-AObeausejour:AO:M3d
-AObmortAutonomeHangar12:AO:M3d
-
-Association
 
   create (plastination:Anatomy{ type:'instance',url:"",location:"",comments:"Dr Von Haagen exposition"})
  
@@ -399,3 +409,8 @@ Association
    create (cooperation)-[:EXPANDS_TO]->(tock);
 
 CSP https://www.univ-montp3.fr/miap/~jq/OptionIA/cours/cspGoualard.pdf Cours 1 à 3 : Frédéric GOUALARD
+
+     create (petri:IT{ type:'instance',url:"",location:"",comments:""})
+     
+          create (hacking:IT{ type:'instance',url:"",location:"",comments:"black vs right"})
+
