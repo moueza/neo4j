@@ -327,12 +327,13 @@ create (photogrammetry)-[:EXPANDS_TO]->(photogrammetryYoutube);
  create (photogrammetryMoi2:Me:Mathematics:IT:M3d{ type:'instance',url:"https://github.com/moueza/stereo",location:""}) ;
 create (photogrammetry)-[:EXPANDS_TO]->(photogrammetryMoi2);
 
-  create (PHOTOGRAMMETRY FROM DRONE:Mathematics:IT:M3d{ type:'instance',url:"http://www.keris-studio.fr/blog/?p=11851",location:""}) ;
-create (photogrammetry)-[:EXPANDS_TO]->(PHOTOGRAMMETRY FROM DRONE);
+  create (PHOTOGRAMMETRYFROMDRONE:Mathematics:IT:M3d{ type:'instance',url:"http://www.keris-studio.fr/blog/?p=11851",location:"",comments:"PHOTOGRAMMETRYFROMDRONE",title:"PHOTOGRAMMETRY FROM DRONE"}) ;
+create (photogrammetry)-[:EXPANDS_TO]->(PHOTOGRAMMETRYFROMDRONE);
 
-Monoscopic photogrammetry to obtain 3D models by a mobile device  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4881215/
+ create (photogrammetryMoi2:Me:Mathematics:IT:M3d{ type:'instance',url:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4881215/",location:"",comments:"Monoscopic photogrammetry to obtain 3D models by a mobile device"}) ;
   
-  Photogrammetry SDK - Calibration SDKhttp://www.linearis3d.com/sdk.html?gclid=Cj0KCQiAnuGNBhCPARIsACbnLzq-k6_w99w2nXUExjEW_sSAJ5hZ10lLipvP52mWyLa2aX4YlCO62sAaAurEEALw_wcB
+   create (PhotogrammetrySDK:Me:Mathematics:IT:M3d{ type:'instance',url:"http://www.linearis3d.com/sdk.html?gclid=Cj0KCQiAnuGNBhCPARIsACbnLzq-k6_w99w2nXUExjEW_sSAJ5hZ10lLipvP52mWyLa2aX4YlCO62sAaAurEEALw_wcB",location:"",comments:"",title:"Photogrammetry SDK - Calibration SDK"}) ;
+  
  
  
  create (trading:Mathematics:IT:Trading{ type:'instance',url:"",location:""}) 
@@ -415,9 +416,22 @@ create (ocl:IT{ type:'instance',url:"",location:""})
      create (tock:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
    create (cooperation)-[:EXPANDS_TO]->(tock);
 
-CSP https://www.univ-montp3.fr/miap/~jq/OptionIA/cours/cspGoualard.pdf Cours 1 à 3 : Frédéric GOUALARD
+     create (tock:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
+
+     create (CSPex:It:Pdf{ type:'pdf',url:"https://www.univ-montp3.fr/miap/~jq/OptionIA/cours/cspGoualard.pdf",location:"",comments:"Cours 1 à 3",author:"Frédéric GOUALARD"})
+  
 
      create (petri:IT{ type:'instance',url:"",location:"",comments:""})
-     
-          create (hacking:IT{ type:'instance',url:"",location:"",comments:"black vs right"})
+          create (pareto:IT{ type:'instance',url:"",location:"",comments:""})
+          create (front:IT{ type:'instance',url:"",location:"",comments:""})
+
+          create (hacking:IT{ type:'instance',url:"",location:"",comments:"black vs right"});
+
+//TODO search doublons
+
+          create (intelligence:IT{ type:'instance',url:"",location:"",comments:""});
+          create (reality:IT{ type:'instance',url:"",location:"",comments:"XR"});
+
+            create (photochromic:Physics{ type:'instance',url:"",location:"",comments:""});
+
 
