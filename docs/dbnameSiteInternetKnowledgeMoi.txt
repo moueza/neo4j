@@ -348,7 +348,12 @@ create (it)-[:EXPANDS_TO]->(mda);
  create (bmethod:IT{ type:'instance',url:"",location:"",comments:"formal programs proof"}) 
 create (it)-[:EXPANDS_TO]->(bmethod);
 
-inpi npi
+
+  
+ create (npi:IT:Parallel:Processing{ type:'instance',url:"",location:"",comments:"",title:""}) ;
+
+
+ create (inpi:Rights:Law{ type:'instance',url:"",location:"",comments:"",title:""}) ;
 
  create (grammar:IT{ type:'instance',url:"",location:""}) 
 create (grammar)-[:EXPANDS_TO]->(bmethod);
