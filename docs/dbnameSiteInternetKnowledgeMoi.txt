@@ -1,7 +1,10 @@
 //TODO delete
 //isbn ex https://neo4j.com/docs/cypher-manual/current/administration/constraints/#administration-constraints-unique-nodes
+
+//this order
 match(m)-[r]->(n)delete(r);
 match(m)delete(m);
+
 
 create (belgium:Location)-[:EXPANDS_TO]->(neoVizNeodash{url:"https://medium.com/neo4j/neodash-2-0-a-brand-new-way-to-visualize-neo4j-ec8dee689e9b
 "});
