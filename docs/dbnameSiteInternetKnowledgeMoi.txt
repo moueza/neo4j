@@ -163,11 +163,15 @@ create (it:Entity:IT{name:'IT',idd:'IT',
 create (parallelism:IT{name:'parallelism',idd:'parallelism',en:'parallelism',fr:'parallelism',
  type:'speciality',comment:'concurrency, starvation,sync'});
   CREATE (it)-[r:CONTAINS]->(parallelism) RETURN r;
- 
+
  
 create (multiAgents:IT{type:'isbn',url:'https://moueza.github.io/isbn-multi-agents-systems-0-201-36048-9/',
 comment:'concurrency, starvation,sync'});
    CREATE (parallelism)-[r:CONTAINS]->(multiAgents) RETURN r;
+ 
+   
+  create (concurrency:IT{});
+ CREATE (it)-[r:CONTAINS]->(concurrency) RETURN r;
  
  
  create (compiler:IT{name:'compiler',idd:'compiler',en:'compiler',fr:'compilateur',
