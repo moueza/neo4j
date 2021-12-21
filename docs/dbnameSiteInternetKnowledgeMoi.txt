@@ -447,3 +447,4 @@ create (ocl:IT{ type:'instance',url:"",location:""})
             create (photochromic:Physics{ type:'instance',url:"",location:"",comments:""});
 
 
+create (:Blender:D3d{id:'brush3D',version:3.0});create (:Blender:D3d{id:'bnpr'});
