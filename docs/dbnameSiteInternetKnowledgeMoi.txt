@@ -370,8 +370,14 @@ create (grammar)-[:EXPANDS_TO]->(bmethod);
 create (ocl:IT{ type:'instance',url:"",location:""}) 
   create (grammar)-[:EXPANDS_TO]->(ocl);
 
- create (lexYacc:IT:CPP:Language{ type:'instance',url:"",location:""}) 
+ create (lexYacc:IT:CPP:Language{ type:'instance',url:"",location:"",comments:"Bison"}) 
   create (grammar)-[:EXPANDS_TO]->(lexYacc);
+
+ create (smte:IT:Language{ id:"smarteiffel",type:'instance',url:"",location:"",comments:""}) -[:EXPANDS_TO]->(osmte:IT:Language{ id:"opensmarteiffel",type:'instance',url:"",location:"",comments:""});
+ 
+ create (lisp:IT:Language{ id:"lisp",type:'instance',url:"",location:"",comments:""}) 
+  create (snd:IT:Software:CCRMA:Music{ id:"snd",type:'instance',url:"https://ccrma.stanford.edu/software/snd/snd/snd.html",location:"",comments:""}) 
+  create (emacs:IT:Software{ id:"emacs",type:'instance',url:"",location:"",comments:""}) 
 
  create (regression:Mathematics{ type:'instance',url:"",location:""}) 
   create (interpolation:Mathematics{ type:'instance',url:"",location:""}) 
@@ -453,6 +459,6 @@ create (:Blender:D3d{id:'brush3D',version:3.0});create (:Blender:D3d{id:'bnpr'})
 
 
 MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5"})SET iridology.date = date('2021-12-28')
-match (n)where n.id="iridology"return (n)
+//match (n)where n.id="iridology"return (n)
 create (parallelMedicine:Medicine{id:'parallelMedicine',url:"",percentInterest:.3});
 create (parallelMedicine)-[:EXPANDS_TO]->(iridology);
