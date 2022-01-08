@@ -458,7 +458,9 @@ create (:Blender:D3d{id:'brush3D',version:3.0});create (:Blender:D3d{id:'bnpr'})
 
 
 
-MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5"})SET iridology.date = date('2021-12-28')
+MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5"})SET iridology.date = date('2021-12-28',organ:"eye")
 //match (n)where n.id="iridology"return (n)
 create (parallelMedicine:Medicine{id:'parallelMedicine',url:"",percentInterest:.3});
 create (parallelMedicine)-[:EXPANDS_TO]->(iridology);
+
+create (bloodPressureIndirect:Medicine{id:'bloodPressureIndirect',url:"https://www.theverge.com/platform/amp/2021/9/16/22677381/smartwatch-blood-pressure-samsung-fitbit-apple",percentInterest:95,comments:"the Verge"});
