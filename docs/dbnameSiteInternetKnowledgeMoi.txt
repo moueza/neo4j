@@ -209,7 +209,7 @@ create (deadlock:Entity:IT{ type:'entity'});
 create (terminaison:Entity:IT{ type:'entity'});
 
 create (lamport:Entity:IT:Clock:Time{ type:'entity'});
-create (lamport:Entity:IT:Clock:Time{ type:'entity'});
+create (fidgeMattern:Entity:IT:Clock:Time{ id:"fidgeMattern",type:'entity'});
 
 create (front:Entity:IT:Algorithm{ type:'entity'});
 create (sentinel:Entity:IT:Algorithm{ type:'entity'});
@@ -221,7 +221,9 @@ create (btree:Entity:IT:Algorithm{ type:'instance'});
 create (cloud:Entity:IT{ type:'entity'});
 
 
-create (covid19omicron:Biology:Medicine:Virus:Corona{ type:'instance'});
+create (covidTracker:Covid19:Biology:Medicine:Virus:Corona{ id:"covidTracker",type:'instance'});
+create (santepubliquefrance:Gouv:Covid19:Biology:Medicine:Virus:Corona{ id:"santepubliquefrance",url:"https://www.santepubliquefrance.fr/",type:'instance'});
+
 create (blenderOmicron:Biology:Medicine:Virus:Corona:Blender:D3D{ type:'instance',url:"https://gitlab.com/moueza/blender/-/blob/master/BIOLOGY/VIRUS/OMICRON/omicron-covid-19-corona-virus-Fluo.blend"});
 CREATE path=(blenderOmicron)-[r:CONTAINS]->(covid19omicron) RETURN path;
 
