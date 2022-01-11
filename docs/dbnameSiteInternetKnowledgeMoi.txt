@@ -236,7 +236,8 @@ create (humanEvolution:Entity:Biology:Hominides{ type:'entity',comments:"",url:"
 create (origin)-[:EXPANDS_TO]->(humanEvolution);
 
 create (sanGoku:D3D:Cartoons{ type:'instance',lang:".jp"});
-create (kenLeSurvivant:D3D:Cartoons:ChineseMedicine:VitalPoints{ type:'instance',lang:".jp"});
+create (kenLeSurvivant:D3D:Cartoons:Medicine:ChineseMedicine:VitalPoints:Medicine{ type:'instance',lang:".jp",lang:".cn"})-[]->(acupunture);
+
 create (pokemon:Neo4J:Database:IT{ type:'instance',lang:".jp",url:"https://neo4j.com/blog/pokegraph-gotta-graph-em-all/",url:"https://www.youtube.com/watch?v=B5tn1GPEQC8"});
 
 
@@ -439,9 +440,11 @@ create (ocl:IT{ type:'instance',url:"",location:""})
      create (tock:Game:Entertainment{ type:'instance',url:"",location:"",comments:""})
 
      create (CSPex:It:Pdf{ type:'pdf',url:"https://www.univ-montp3.fr/miap/~jq/OptionIA/cours/cspGoualard.pdf",location:"",comments:"Cours 1 à 3",author:"Frédéric GOUALARD"})
+        create (CSPex)-[:EXPANDS_TO]->(pointillism:It{url:"https://homniserv.github.io/pointillism/"});
+
   
 
-     create (petri:IT{ type:'instance',url:"",location:"",comments:""})
+     create (petri:It{ type:'instance',url:"",location:"",comments:""})
           create (pareto:IT{ type:'instance',url:"",location:"",comments:""})
           create (front:IT{ type:'instance',url:"",location:"",comments:""})
 
@@ -449,7 +452,7 @@ create (ocl:IT{ type:'instance',url:"",location:""})
 
 //TODO search doublons
 
-          create (intelligence:IT{ type:'instance',url:"",location:"",comments:""});
+          create (intelligence:It{ type:'instance',url:"",location:"",comments:""});
           create (reality:IT{ type:'instance',url:"",location:"",comments:"XR"});
 
             create (photochromic:Physics{ type:'instance',url:"",location:"",comments:""});
@@ -457,12 +460,19 @@ create (ocl:IT{ type:'instance',url:"",location:""})
 
 create (:Blender:D3d{id:'brush3D',version:3.0});create (:Blender:D3d{id:'bnpr'});
 
+  create (ecg:Medicine{ type:'instance',url:"",location:"",comments:""})-[:EXPANDS_TO]->(latin{id:"latin"})
 
 
 
 MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5"})SET iridology.date = date('2021-12-28',organ:"eye")
 //match (n)where n.id="iridology"return (n)
-create (parallelMedicine:Medicine{id:'parallelMedicine',url:"",percentInterest:.3});
+create (parallelMedicine:Medicine{id:'parallelMedicine',url:"",percentInterest:30.1});
 create (parallelMedicine)-[:EXPANDS_TO]->(iridology);
 
-create (bloodPressureIndirect:Medicine{id:'bloodPressureIndirect',url:"https://www.theverge.com/platform/amp/2021/9/16/22677381/smartwatch-blood-pressure-samsung-fitbit-apple",percentInterest:95,comments:"the Verge"});
+create (bloodPressureIndirect:Medicine{id:'bloodPressureIndirect',url:"https://www.theverge.com/platform/amp/2021/9/16/22677381/smartwatch-blood-pressure-samsung-fitbit-apple",percentInterest:95,comments:"the Verge"})-[:EXPANDS_TO]->(ppg{id:"photoPlethysmoGraphie"});
+
+
+
+ 
+create (lambdaCalculus:It{id:'lambdaCalculus',url:"",percentInterest:5});
+create (lambdaCalculus)-[:EXPANDS_TO]->(prolog);
