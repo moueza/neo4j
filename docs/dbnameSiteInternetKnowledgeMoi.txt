@@ -236,7 +236,7 @@ create (humanEvolution:Entity:Biology:Hominides{ type:'entity',comments:"",url:"
 create (origin)-[:EXPANDS_TO]->(humanEvolution);
 
 create (sanGoku:D3D:Cartoons{ type:'instance',lang:".jp"});
-create (kenLeSurvivant:D3D:Cartoons:Medicine:ChineseMedicine:VitalPoints:Medicine{ type:'instance',lang:".jp",lang:".cn"})-[]->(acupunture);
+create (kenLeSurvivant:D3D:Cartoons:Medicine:ChineseMedicine:VitalPoints:Medicine{ type:'instance',lang:".jp",lang:".cn"})-[:EXPANDS_TO]->(acupunture);
 
 create (pokemon:Neo4J:Database:IT{ type:'instance',lang:".jp",url:"https://neo4j.com/blog/pokegraph-gotta-graph-em-all/",url:"https://www.youtube.com/watch?v=B5tn1GPEQC8"});
 
