@@ -202,7 +202,12 @@ create (mortDeSenequeDavid:Art{comment:"mort de seneque david veines",
  
  
  
-create (quantum:Entity:IT{ type:'entity'});
+create (quantum:Entity:IT{id:"quantum", type:'entity'});
+(quantum)-[:EXPANDS_TO]->(quantIdRec{id:"quantIdRec",googleSearch:"quantique idees recues"})-[:GIVES]->(url:"https://theconversation.com/sept-idees-fausses-sur-la-physique-quantique-113517",percentInterest:90)
+(quantIdRec)-[:GIVES]->(url:"http://www.slate.fr/story/209711/idees-fausses-physique-quantique-feynman-sciences-theories-mecanique",percentInterest:10)
+(quantIdRec)-[:GIVES]->(url:"https://www.ladn.eu/tech-a-suivre/quelles-sont-10-tech-emergentes-et-prometteuses-2020/",percentInterest:10)
+
+
 create (parallelism:Entity:IT{ type:'entity'});
 create (concurrency:Entity:IT{ type:'entity'});
 create (deadlock:Entity:IT{ type:'entity'});
