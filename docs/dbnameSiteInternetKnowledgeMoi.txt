@@ -464,7 +464,8 @@ create (:Blender:D3d{id:'brush3D',version:3.0});create (:Blender:D3d{id:'bnpr'})
 
 
 
-MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5"})SET iridology.date = date('2021-12-28',organ:"eye")
+MERGE (iridology:Anatomy:Medicine{id:'iridology',url:"",percentInterest:.5,src:"https://github.com/moueza/Cypher-Sleuthing-Dealing-with-Dates-Part-1/issues/5",organ:"eye"})SET iridology.date = date('2021-12-28')
+
 //match (n)where n.id="iridology"return (n)
 create (parallelMedicine:Medicine{id:'parallelMedicine',url:"",percentInterest:30.1});
 create (parallelMedicine)-[:EXPANDS_TO]->(iridology);
