@@ -486,6 +486,9 @@ create (lambdaCalculus)-[:EXPANDS_TO]->(prolog);
 create (fontMedievalLemondeHitler:It:Font{id:'fontMedievalLemondeHitler',url:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pornic.com%2Fmedias%2Fimages%2Fprestations%2Fmultitailles%2F320x240_journees-europeennes-du-patrimoine-2021-campement-medieval-35167.jpg&imgrefurl=https%3A%2F%2Fwww.pornic.com%2Fjournees-europeennes-du-patrimoine-a-pornic-pornic.html&tbnid=xJujC8eVtoMXhM&vet=12ahUKEwipq5uutrX1AhUqw7sIHY8_B7cQMygVegUIARC-AQ..i&docid=DKCq0KatsVKwjM&w=240&h=320&q=26%20septembre%202021%20pornic&ved=2ahUKEwipq5uutrX1AhUqw7sIHY8_B7cQMygVegUIARC-AQ",percentInterest:1});
 
 create(plastination:Medicine)-[:BY]->(vonHagens:Person:Dr{id:"vonHagens"})
-create(plastination:Medicine{id:"plastination"})-[:BY]->(vonHagens:Person:Dr{id:"vonHagens"})
+create(plastination:Medicine{id:"plastination"})-[:BY]->(vonHagens:Person:Dr{id:"vonHagens"})//auto link to same node of same id var or if prop
 
 create(droitALimage:Medicine{id:"droitALimage",url:"https://www.service-public.fr/particuliers/vosdroits/F32103",comments:"droit a l image"})
+
+//TODO request ones with no id property + -> set id = variable
+//id prop or id var unique
