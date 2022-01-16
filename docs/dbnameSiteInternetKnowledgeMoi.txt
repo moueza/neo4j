@@ -488,7 +488,7 @@ create (fontMedievalLemondeHitler:It:Font{id:'fontMedievalLemondeHitler',url:"ht
 //create(plastination:Medicine)-[:BY]->(vonHagens:Person:Dr{id:"vonHagens"})
 create(plastination:Medicine{id:"plastination"})-[:BY]->(vonHagens:Person:Dr{id:"vonHagens"})//auto link to same node of same id var or if prop
 
-create(droitALimage:Medicine{id:"droitALimage",url:"https://www.service-public.fr/particuliers/vosdroits/F32103",comments:"droit a l image"})
+create(droitALimage:Gouv{id:"droitALimage",url:"https://www.service-public.fr/particuliers/vosdroits/F32103",comments:"droit a l image"})
 
 //TODO request ones with no id property + -> set id = variable
 //id prop or id var unique
