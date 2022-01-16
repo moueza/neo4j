@@ -492,3 +492,5 @@ create(droitALimage:Medicine{id:"droitALimage",url:"https://www.service-public.f
 
 //TODO request ones with no id property + -> set id = variable
 //id prop or id var unique
+
+//match (n)-[r]->(m) where id(n)=264 delete r,n,m
