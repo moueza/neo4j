@@ -494,3 +494,4 @@ create(droitALimage:Gouv{id:"droitALimage",url:"https://www.service-public.fr/pa
 //id prop or id var unique
 
 //match (n)-[r]->(m) where id(n)=264 delete r,n,m
+create (suspend:It{id:"suspend",url:"https://askubuntu.com/questions/1032633/18-04-screen-remains-blank-after-wake-up-from-suspend/1041397#1041397",googleRequest:"ubuntu suspend black screen"})
