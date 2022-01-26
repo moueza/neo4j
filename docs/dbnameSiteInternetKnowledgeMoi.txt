@@ -502,3 +502,5 @@ create (bioInformatique:It:Biology{id:"bioInformatique",url:"https://www.zdnet.f
 
 //https://stackoverflow.com/questions/64949795/neo4j-match-by-user-defined-variable
  create (pointillism)-[r:EXPANDS_TO]->(pointillismExBandRech:It{id:"pointillismExBandRech",url:"https://youtu.be/1AYAvTGs15E?t=1942"}) return r 
+ 
+create(:ventesPrivees{id:"groupon",url:"groupon.fr",comments:"ventes privees"})
