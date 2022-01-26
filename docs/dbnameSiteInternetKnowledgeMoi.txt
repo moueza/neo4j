@@ -505,7 +505,7 @@ create (bioInformatique:It:Biology{id:"bioInformatique",url:"https://www.zdnet.f
  
 create(:ventesPrivees{id:"groupon",url:"groupon.fr",comments:"ventes privees"})
 
-create (websiteFormulas:Website:Mathematics:Formulas{id:'websiteFormulas'})-[r:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jaxHow",url:"https://codingislove.com/display-maths-formulas-webpage/"})
-create (websiteFormulas)-[r:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jax",url:"https://www.mathjax.org/"})
+create (websiteFormulas:Website:Mathematics:Formulas{id:'websiteFormulas'})-[rwebsiteFormulas1:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jaxHow",url:"https://codingislove.com/display-maths-formulas-webpage/"})
+create (websiteFormulas)-[rwebsiteFormulas2:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jax",url:"https://www.mathjax.org/"})
 
 create (proceduralRock:Blender{id:"proceduralRock"})
