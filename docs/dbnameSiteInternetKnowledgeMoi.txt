@@ -504,3 +504,6 @@ create (bioInformatique:It:Biology{id:"bioInformatique",url:"https://www.zdnet.f
  create (pointillism)-[r:EXPANDS_TO]->(pointillismExBandRech:It{id:"pointillismExBandRech",url:"https://youtu.be/1AYAvTGs15E?t=1942"}) return r 
  
 create(:ventesPrivees{id:"groupon",url:"groupon.fr",comments:"ventes privees"})
+
+create (websiteFormulas:Website:Mathematics:Formulas{id:'websiteFormulas'})-[r:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jaxHow",url:"https://codingislove.com/display-maths-formulas-webpage/"})
+create (websiteFormulas)-[r:EXPANDS_TO{googleRequest:"website mathematics formulas"}]->({id:"jax",url:"https://www.mathjax.org/"})
