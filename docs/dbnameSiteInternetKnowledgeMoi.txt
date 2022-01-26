@@ -511,3 +511,5 @@ create (websiteFormulas)-[rwebsiteFormulas2:EXPANDS_TO{googleRequest:"website ma
 create (proceduralRock:Blender{id:"proceduralRock"})
 
 create(richardCottingham:Person:Murder:Serial:Death{id:"richardCottingham",firstname:"Richard",name:"Cottingham",sex:"M",comments:"richardCottinghamPersonMurderSerial killer"})-[rrichardCottingham1:INTERVIEWED_BY]->(:Journalism{firstname:"Nadia",name:"FEDZANI",sex:"F",job:"journalism"})
+
+create(mathematitienIntuition{id:"mathematitienIntuition",url:"https://www.philomag.com/articles/david-bessis-en-mathematiques-limagination-le-pouvoir-de-rattraper-lintelligence"})
