@@ -510,6 +510,14 @@ create (websiteFormulas)-[rwebsiteFormulas2:EXPANDS_TO{googleRequest:"website ma
 
 create (proceduralRock:Blender{id:"proceduralRock"})
 
-create(richardCottingham:Person:Murder:Serial:Death{id:"richardCottingham",firstname:"Richard",name:"Cottingham",sex:"M",comments:"richardCottinghamPersonMurderSerial killer"})-[rrichardCottingham1:INTERVIEWED_BY]->(:Journalism{firstname:"Nadia",name:"FEDZANI",sex:"F",job:"journalism"})
+create(richardCottingham:Person:Murder:Serial:Death{id:"richardCottingham",firstname:"Richard",name:"Cottingham",sex:"M",comments:"richardCottinghamPersonMurderSerial killer"})-[rrichardCottingham1:INTERVIEWED_BY]->(:Journalist{firstname:"Nadia",name:"FEDZANI",sex:"F",job:"journalism"})
 
 create(mathematitienIntuition{id:"mathematitienIntuition",url:"https://www.philomag.com/articles/david-bessis-en-mathematiques-limagination-le-pouvoir-de-rattraper-lintelligence"})
+
+create (IdrissAberkane:Person{id:"IdrissAberkane",firstname:"Idriss",name:"Aberkane",sex:"M",job:"",comments:"",url:'https://factandfurious.com/fact-checking/les-18-erreurs-didriss-aberkane'})
+
+
+create (neo4jUniqueConstraint:It:Neo4j{id:"neo4jUniqueConstraint",comments:"",url:'https://neo4j.com/docs/cypher-manual/current/constraints/examples/'})
+
+create (neo4jSearch:It:Neo4j{id:"neo4jSearch",comments:"",url:'https://neo4j.com/docs/cypher-manual/current/indexes-for-full-text-search/'})
+
