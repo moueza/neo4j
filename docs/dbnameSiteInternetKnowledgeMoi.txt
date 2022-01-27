@@ -527,3 +527,7 @@ create (prouverdemontrermontreretjustifier:Mathematics{id:"prouver-demontrer-mon
 
 
 create (diagramDemonstrationAndCo:Mathematics:Diagram{id:"diagramDemonstrationAndCo", title:"Démonstration & co : à suivre",url:'https://clairelommeblog.wordpress.com/',comments:"diagram Démonstration & co : à suivre"})
+
+
+
+create (diagramDeWenn:Mathematics:Diagram{id:"diagramDeWenn",url:'',comments:""})
