@@ -521,4 +521,9 @@ create (neo4jUniqueConstraint:It:Neo4j{id:"neo4jUniqueConstraint",comments:"",ur
 
 create (neo4jSearch:It:Neo4j{id:"neo4jSearch",comments:"",url:'https://neo4j.com/docs/cypher-manual/current/indexes-for-full-text-search/'})
 
-create (:Mathematics{id:"",url:'https://clairelommeblog.wordpress.com/2022/01/26/madame-cest-quoi-la-difference-entre-prouver-demontrer-montrer-et-justifier/',comments:"madame-cest-quoi-la-difference-entre-prouver-demontrer-montrer-et-justifier"})
+ 
+
+create (prouverdemontrermontreretjustifier:Mathematics{id:"prouver-demontrer-montrer-et-justifier",url:'https://clairelommeblog.wordpress.com/2022/01/26/madame-cest-quoi-la-difference-entre-prouver-demontrer-montrer-et-justifier/',comments:"madame-cest-quoi-la-difference-entre-prouver-demontrer-montrer-et-justifier"})
+
+
+create (diagramDemonstrationAndCo:Mathematics:Diagram{id:"diagramDemonstrationAndCo", title:"Démonstration & co : à suivre",url:'https://clairelommeblog.wordpress.com/',comments:"diagram Démonstration & co : à suivre"})
