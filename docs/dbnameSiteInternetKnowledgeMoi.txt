@@ -537,4 +537,15 @@ match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza bl
 match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(toonShader:Blender{id:"toonShader",comments:"",color:"yellow",url:"https://www.pinterest.fr/pin/298856125280539779/"})
 
 create (env:Entity{type:"entity",id:"env",comments:"envelop" entity})
-match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(envBlender:Blender:Env{id:"envBlender",comments:"shrinkwrap",color:"",url:"https://www.pinterest.fr/pin/298856125280789563/"})
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(envBlender:Blender:Env{id:"envBlender",comments:"shrinkwrap",color:"",url:"https://www.pinterest.fr/pin/298856125280789563/"})
+
+match (n)where n.id="env" create (n)-[:EXPANDS_TO{}]->(:Env:Mathematics{id:"",comments:"skull hull",color:"",url:"https://en.wikipedia.org/wiki/Convex_hull"})
+
+
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(blenderBear:Blender:Env{id:"blenderBear",comments:"teddy bear doll",color:"brown",url:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F53%2Fb0%2F05%2F53b005269a50eeece4be37e5057f1f80.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.fr%2Fmoueza%2Fsculptures-artistiques%2F&tbnid=bg7wB2Lv7MYRIM&vet=12ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn..i&docid=AVA-F93k4mABwM&w=236&h=177&itg=1&q=moueza%20blender%20cloth&client=ms-android-samsung-gs-rev1&ved=2ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn#imgrc=bg7wB2Lv7MYRIM&imgdii=8jGNyAyg026hNM"})
+
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(:Blender{id:"proceduralClay",comments:"proceduralClay",color:"brown",url:"
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F53%2Fb0%2F05%2F53b005269a50eeece4be37e5057f1f80.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.fr%2Fmoueza%2Fsculptures-artistiques%2F&tbnid=bg7wB2Lv7MYRIM&vet=12ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn..i&docid=AVA-F93k4mABwM&w=236&h=177&itg=1&q=moueza%20blender%20cloth&client=ms-android-samsung-gs-rev1&ved=2ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn"})
