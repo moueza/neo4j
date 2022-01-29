@@ -531,3 +531,10 @@ create (diagramDemonstrationAndCo:Mathematics:Diagram{id:"diagramDemonstrationAn
 
 
 create (diagramDeWenn:Mathematics:Diagram{id:"diagramDeWenn",url:'',comments:""})
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(redCloth:Blender{id:"redCloth",comments:"procedural laine broderie",color:"red",url:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Fc2%2F89%2F7e%2Fc2897e2441f7d2e146e60a8c5e7f3192--blender-tutorial-cloth-napkins.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.fr%2Fmoueza%2Fsculptures-artistiques%2F&tbnid=o40BUJqEDHI1KM&vet=12ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygAegQIARAb..i&docid=AVA-F93k4mABwM&w=728&h=336&itg=1&q=moueza%20blender%20cloth&client=ms-android-samsung-gs-rev1&ved=2ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygAegQIARAb"})
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(toonShader:Blender{id:"toonShader",comments:"",color:"yellow",url:"https://www.pinterest.fr/pin/298856125280539779/"})
+
+create (env:Entity{type:"entity",id:"env",comments:"envelop" entity})
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(envBlender:Blender:Env{id:"envBlender",comments:"shrinkwrap",color:"",url:"https://www.pinterest.fr/pin/298856125280789563/"})
