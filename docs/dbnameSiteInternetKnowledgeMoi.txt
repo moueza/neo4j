@@ -549,3 +549,9 @@ match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(blenderBear:Blende
 
 match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(:Blender{id:"proceduralClay",comments:"proceduralClay",color:"brown",url:"
 https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F53%2Fb0%2F05%2F53b005269a50eeece4be37e5057f1f80.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.fr%2Fmoueza%2Fsculptures-artistiques%2F&tbnid=bg7wB2Lv7MYRIM&vet=12ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn..i&docid=AVA-F93k4mABwM&w=236&h=177&itg=1&q=moueza%20blender%20cloth&client=ms-android-samsung-gs-rev1&ved=2ahUKEwiwqNKky9b1AhUE_hQKHRmDDuMQMygGegQIARAn"})
+
+
+
+
+match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(makeHuman:Software:Blender{id:"makeHuman",comments:"",color:"",url:"https://jeux.developpez.com/actu/68905/MakeHuman-1-0-0-un-outil-pour-creer-des-personnages-3D-pour-vos-applications-et-jeux-video/"})
+
