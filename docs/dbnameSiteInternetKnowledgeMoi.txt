@@ -555,3 +555,4 @@ https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F53%2Fb0
 
 match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(makeHuman:Software:Blender{id:"makeHuman",comments:"",color:"",url:"https://jeux.developpez.com/actu/68905/MakeHuman-1-0-0-un-outil-pour-creer-des-personnages-3D-pour-vos-applications-et-jeux-video/"})
 
+create (islamRoubaix:Islam{id:"islamRoubaix",title:"Zone Interdite : Face au danger de l'Islam radical, les ... - 6Play",comments:"",color:"",url:"https://www.6play.fr/zone-interdite-p_845/face-au-danger-de-lislam-radical-les-reponses-de-letat-c_12920554",googleRequest:"zone interdite islam m6 interdite"})
