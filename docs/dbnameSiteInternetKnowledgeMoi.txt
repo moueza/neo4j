@@ -560,3 +560,5 @@ create (islamRoubaix:Islam{id:"islamRoubaix",title:"Zone Interdite : Face au dan
 
 
 create (statueDeboulonneeMerOlonne:Art{id:"statueDeboulonneeMerOlonne",title:"",color:"",url:"https://fr.aleteia.org/2021/11/22/une-statue-de-saint-michel-bientot-deboulonnee-aux-sables-dolonne/",comments:"st Michel statue art mer cote"})
+
+create (starsImageProcessingSiril:Astronomy:Stars:Image:Processing{id:"starsImageProcessingSiril",url:"https://siril.org/"})
