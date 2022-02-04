@@ -562,3 +562,18 @@ create (islamRoubaix:Islam{id:"islamRoubaix",title:"Zone Interdite : Face au dan
 create (statueDeboulonneeMerOlonne:Art{id:"statueDeboulonneeMerOlonne",title:"",color:"",url:"https://fr.aleteia.org/2021/11/22/une-statue-de-saint-michel-bientot-deboulonnee-aux-sables-dolonne/",comments:"st Michel statue art mer cote"})
 
 create (starsImageProcessingSiril:Astronomy:Stars:Image:Processing{id:"starsImageProcessingSiril",url:"https://siril.org/"})
+
+//TODO titling from url
+create (mirrorBlender:Blender{id:"mirrorBlender",title:"",color:"",url:"https://www.youtube.com/watch?v=NkrRJIDMmlk",comments:""})
+
+create (sb1:Blender:SoftBody{id:"sb1",title:"",color:"",url:"https://www.youtube.com/watch?v=p8rEHCGfTNs",comments:""})
+
+
+create (sb2:Blender:SoftBody{id:"sb2",title:"",color:"",url:"https://www.youtube.com/watch?v=4lqUxQ2XN4o",comments:""})
+create (sb3:Blender:SoftBody{id:"sb3",title:"",color:"",url:"https://www.youtube.com/watch?v=p8rEHCGfTNs",comments:"mutual"})
+create (sb4:Blender:SoftBody{id:"sb4",title:"",color:"",url:"https://www.youtube.com/watch?v=EdIGfANAF7M",comments:""})
+create (sb5:Blender:SoftBody{id:"sb5",title:"",color:"",url:"https://www.youtube.com/watch?v=KmwRVcUAz0U",comments:""})
+create (sb6:Blender:SoftBody{id:"sb6",title:"",color:"",url:"https://www.youtube.com/watch?v=eggOO9CIyp4",comments:""})
+create (sb7:Blender:SoftBody{id:"sb7",title:"",color:"",url:"https://www.youtube.com/watch?v=YCssEVa43t4",comments:""})
+
+create (:{id:"",title:"",color:"",url:"",comments:""})
