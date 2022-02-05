@@ -592,4 +592,6 @@ create (filetMignon{id:"filetMignon",title:"",color:"",url:"",comments:"porc"})
 create (bjork:Music{id:"bjork",title:"",color:"",url:"",comments:"bgork"})
 
 
+create (soprano:Music{id:"soprano",title:"",color:"",url:"",comments:""})
+
 create (:{id:"",title:"",color:"",url:"",comments:""})
