@@ -613,11 +613,12 @@ create (:Sex:Music:Song{id:"",title:"",color:"",url:"",comments:"lait des sendat
 create (:Became{id:"",title:"",color:"",url:"https://www.amazon.fr/s?k=Billy+Idol+-+Flesh+for+Fantasy&geniuslink=true&tag=raninc0e-21",comments:"Billy Idol - Flesh for Fantasy  became"})
 
 
-
-create ({id:"",title:"",color:"",url:"",comments:""})
+ 
 
 create ({id:"",title:"",color:"blue",url:"",comments:"Lemon Tree - Fools Garden (Lyrics)  why sky"})
 
+
+create (Zucchero:Music:Song{id:"Zucchero",title:"",color:"",url:"",comments:"Zucchero"})
 
 create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
