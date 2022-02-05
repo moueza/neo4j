@@ -600,13 +600,13 @@ create (andImissYou:Music{id:"andImissYou",title:"",color:"",url:"",comments:"An
 create (children:Music{id:"",title:"",color:"",url:"",comments:"Robert MILES"})
 
 
-create ({id:"",title:"",color:"",url:"",comments:""})
+create (sundayBloodySunday:Music{id:"sundayBloodySunday",title:"",color:"",url:"",comments:"sometimes there is sundays   Sunday Bloody Sunday"})
 
  
-create ({id:"",title:"",color:"",url:"",comments:""})
+create (metaPhylosophy{id:"",title:"",color:"",url:"",comments:"trop liberté tue liberté  Boucle de retroaction"})
 
 
-create ({id:"",title:"",color:"",url:"",comments:""})
+create (:Sex:Music:Song{id:"",title:"",color:"",url:"",comments:"lait des sendations fortes  ... allusions sexuelles"})
 
 
 create ({id:"",title:"",color:"",url:"",comments:""})
