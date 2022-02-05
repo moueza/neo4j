@@ -585,5 +585,11 @@ create (googleFont:Font{id:"googleFont",title:"",color:"",url:"",comments:""})
 
 create (saw:Film{id:"saw",title:"",color:"",url:"",comments:""})
 
-create (:{id:"",title:"",color:"",url:"",comments:""})
 
+create (filetMignon{id:"filetMignon",title:"",color:"",url:"",comments:"porc"})
+
+
+create (bjork:Music{id:"bjork",title:"",color:"",url:"",comments:"bgork"})
+
+
+create (:{id:"",title:"",color:"",url:"",comments:""})
