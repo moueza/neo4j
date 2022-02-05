@@ -609,5 +609,10 @@ create (metaPhylosophy{id:"",title:"",color:"",url:"",comments:"trop liberté tu
 create (:Sex:Music:Song{id:"",title:"",color:"",url:"",comments:"lait des sendations fortes  ... allusions sexuelles"})
 
 
+
+create (:Became{id:"",title:"",color:"",url:"https://www.amazon.fr/s?k=Billy+Idol+-+Flesh+for+Fantasy&geniuslink=true&tag=raninc0e-21",comments:"Billy Idol - Flesh for Fantasy  became"})
+
+
+
 create ({id:"",title:"",color:"",url:"",comments:""})
 
