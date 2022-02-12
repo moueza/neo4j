@@ -649,8 +649,10 @@ create (:Censure:Cloud{id:"telegram",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"tor",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"dark net",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"skred",title:"",color:"",url:"",comments:""})
-create (:Censure{id:"",title:"",color:"",url:"",comments:""})
-create (:Censure{id:"",title:"",color:"",url:"",comments:""})
+
+
+
+create (nulsSciences:Mathematics:Sciences:Engineer{id:"",title:"   Ils étaient « nuls en maths » et sont devenus médecins ou ingénieurs",color:"",url:"https://start.lesechos.fr/apprendre/universites-ecoles/ils-etaient-nuls-en-maths-et-sont-devenus-medecins-ou-ingenieurs-1382457",comments:"bad"})
 
 
 
