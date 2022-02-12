@@ -689,9 +689,12 @@ create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"http://typom
  
  create (genealogy{id:"",title:"",color:"",url:"",comments:""})-[:EXPANDS_TO{}]->(genetics{id:"",title:"",color:"",url:"",comments:"Linee  formes ancestrales"})
  
-create ({id:"",title:"",color:"",url:"",comments:""})
-create ({id:"",title:"",color:"",url:"",comments:""})
-create ({id:"",title:"",color:"",url:"",comments:""})
+create (torsionBlender:Blender:Shortcut{id:"",title:"twist",color:"",url:"https://www.youtube.com/watch?v=c7FmZQaQ568",comments:"torsion Blender ctl-t"})
+
+create (:Mathematics{id:"torsonCurve",title:"",color:"",url:"",comments:"torsion courbe gauche"})
+
+create (:D3d:ImageProcessing:Photogrammetry{id:"",title:"photogrammetry drone",color:"",url:"http://www.keris-studio.fr/blog/?p=11851",comments:""})
+
 create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
