@@ -620,6 +620,41 @@ create ({id:"",title:"",color:"blue",url:"",comments:"Lemon Tree - Fools Garden 
 
 create (Zucchero:Music:Song{id:"Zucchero",title:"",color:"",url:"",comments:"Zucchero"})
 
+create (ingenierieMaths:Mathematics:School{id:"ingenierieMaths",title:"",color:"",url:"https://sites.google.com/view/master-im-ubs/",comments:"ingenierie"})
+create (mathsMFA:Mathematics:School{id:"",title:"",color:"",url:"https://www.math.sciences.univ-nantes.fr/fr/pages/323",comments:"mathsMFA"})
+create (MFAprogrammeDetaille:Mathematics:School{id:"MFAprogrammeDetaille",title:"",color:"",url:"https://docplayer.fr/190446104-Master-1-m1-mathematiques-fondamentales-et-appliquees-mfa-annee-universitaire.html",comments:"programme detaillé"})
+
+ 
+create (gaspiPhenix:Gaspillage{id:"gaspiPhenix",title:"",color:"",url:"https://globalgoodness.ca/phenix-une-application-anti-gaspillage/?gclid=Cj0KCQiAjJOQBhCkARIsAEKMtO02vd3-hbajei3MpyOc3qr-YX89Sv7TDS6KCVjuudRiNwRW8jD2TgwaAgU6EALw_wcB",comments:"gaspiPhenix"})
+
+ https://www.nousantigaspi.com/
+create (nsAntiGaspi:Gaspillage{id:"nsAntiGaspi",title:"",color:"",url:"
+ https://www.nousantigaspi.com/",comments:"nsAntiGaspi"})
+
+create (tooGood:Gaspillage{id:"",title:"",color:"",url:"https://toogoodtogo.fr/fr",comments:""})
+
+create (debarrasGratuit:Gaspillage{id:"",title:"",color:"",url:"https://www.vide-maison44.fr/?gclid=Cj0KCQiAjJOQBhCkARIsAEKMtO3OjUkHIA_nHJ3rEg1Ub2xadGV9jF9xNowQO-SI9db9sYfabpCZXgwaAjpxEALw_wcB",comments:""})
+
+create (:Gaspillage{id:"",title:"",color:"",url:"",comments:""})
+
+create (:Gaspillage{id:"",title:"",color:"",url:"",comments:""})
+
+create (:Gaspillage{id:"",title:"",color:"",url:"",comments:""})
+
+create (truthSocial:Censure:Person{id:"",title:"",color:"",url:"https://www.lesechos.fr/monde/etats-unis/le-reseau-social-de-donald-trump-en-ligne-le-21-fevrier-1377437",comments:"Trump"})
+
+create (gettr:Censure{id:"gettr",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"signal",title:"",color:"",url:"",comments:""})
+create (:Censure:Cloud{id:"telegram",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"tor",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"dark net",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"skred",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"",title:"",color:"",url:"",comments:""})
+create (:Censure{id:"",title:"",color:"",url:"",comments:""})
+
+
+
+
 create ({id:"",title:"",color:"",url:"",comments:""})
-create ({id:"",title:"",color:"",url:"",comments:""})
+
 
