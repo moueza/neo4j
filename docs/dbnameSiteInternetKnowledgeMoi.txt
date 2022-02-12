@@ -659,7 +659,7 @@ create (nulsSciences:Mathematics:Sciences:Engineer{id:"",title:"   Ils étaient 
 
 create (infomaniakKdrive:Stockage{id:"",title:"",color:"",url:"",comments:"kDrive 15Go"})
 
-create (:Rgpd:Cnil:Google{id:"",title:"",color:"",url:"https://www.abondance.com/20220211-47065-google-analytics-peut-il-etre-illegal-en-france.html",comments:"GA Analytics"})
+create (:Seo:Rgpd:Cnil:Google{id:"",title:"",color:"",url:"https://www.abondance.com/20220211-47065-google-analytics-peut-il-etre-illegal-en-france.html",comments:"GA Analytics"})
 
 create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
