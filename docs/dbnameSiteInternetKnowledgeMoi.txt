@@ -645,7 +645,7 @@ create (truthSocial:Censure:Person{id:"",title:"",color:"",url:"https://www.lese
 
 create (gettr:Censure{id:"gettr",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"signal",title:"",color:"",url:"",comments:""})
-create (:Censure:Cloud{id:"telegram",title:"",color:"",url:"",comments:""})
+create (:Censure:Cloud:Stockage{id:"telegram",title:"",color:"",url:"https://siecledigital.fr/2021/10/27/teledrive-stockage-cloud-gratuit-illimite-api-telegram/",comments:"illimité"})
 create (:Censure{id:"tor",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"dark net",title:"",color:"",url:"",comments:""})
 create (:Censure{id:"skred",title:"",color:"",url:"",comments:""})
@@ -657,6 +657,10 @@ create (nulsSciences:Mathematics:Sciences:Engineer{id:"",title:"   Ils étaient 
 
 
 
+create (infomaniakKdrive:Stockage{id:"",title:"",color:"",url:"",comments:"kDrive 15Go"})
+
+create ({id:"",title:"",color:"",url:"",comments:""})
+create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
 
 
