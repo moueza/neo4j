@@ -695,7 +695,8 @@ create (:Mathematics{id:"torsonCurve",title:"",color:"",url:"",comments:"torsion
 
 create (:D3d:ImageProcessing:Photogrammetry{id:"",title:"photogrammetry drone",color:"",url:"http://www.keris-studio.fr/blog/?p=11851",comments:""})
 
-create ({id:"",title:"",color:"",url:"",comments:""})
+create (:Neo4j{id:"bloomEdit",title:"",color:"",url:"https://www.youtube.com/watch?v=--Ijc186Ix8&t=1s",comments:""})
+
 create ({id:"",title:"",color:"",url:"",comments:""})
 create ({id:"",title:"",color:"",url:"",comments:""})
 
