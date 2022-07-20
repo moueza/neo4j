@@ -670,7 +670,7 @@ create (dieFraktur)-[:EXPANDS_TO{}]->(leMondeJournal{id:"leMondeJournal",title:"
 
 
 
-create (dieFraktur)-[:EXPANDS_TO{}]->create ({id:"",title:"",color:"",url:"https://fonts.google.com/specimen/UnifrakturCook#standard-styles",comments:""})
+create (dieFraktur)-[:EXPANDS_TO{}]-> ({id:"",title:"",color:"",url:"https://fonts.google.com/specimen/UnifrakturCook#standard-styles",comments:""})
 
 create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"https://fonts.google.com/?query=fraktur",comments:""})
 create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"https://www.1001fonts.com/fraktur-fonts.html?page=4",comments:""})
