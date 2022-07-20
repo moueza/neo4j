@@ -536,7 +536,7 @@ match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza bl
 
 match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{googleSearch:"moueza blender cloth"}]->(toonShader:Blender{id:"toonShader",comments:"",color:"yellow",url:"https://www.pinterest.fr/pin/298856125280539779/"})
 
-create (env:Entity{type:"entity",id:"env",comments:"envelop" entity})
+create (env:Entity{type:"entity",id:"env",comments:"envelop" })
 
 match (n)where n.idd="Blender3D" create (n)-[:EXPANDS_TO{}]->(envBlender:Blender:Env{id:"envBlender",comments:"shrinkwrap",color:"",url:"https://www.pinterest.fr/pin/298856125280789563/"})
 
