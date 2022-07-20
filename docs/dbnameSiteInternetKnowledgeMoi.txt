@@ -680,7 +680,7 @@ create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"",comments:"
 create (:Font{id:"",title:"",color:"",url:"https://fonts.google.com/specimen/Roboto",comments:"search"})
 
 create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"https://www.ideo.com/eu",comments:""})
- ",comments:""})
+ 
 create (dieFraktur)-[:EXPANDS_TO{}]->(visualSearch:Font{id:"",title:"",color:"",url:"http://fontmap.ideo.com/",comments:"A's"})
 create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:"http://typomanie.fr/wp-content/uploads/2016/03/Capture-d%E2%80%99%C3%A9cran-2016-03-06-%C3%A0-11.08.27-e1457258989894.png",comments:""})
 create (dieFraktur)-[:EXPANDS_TO{}]->({id:"",title:"",color:"",url:http://typomanie.fr/font-map-encore-une-nouvelle-facon-dexplorer-les-google-fontes/"",comments:""})
