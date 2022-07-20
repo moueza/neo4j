@@ -627,7 +627,7 @@ create (MFAprogrammeDetaille:Mathematics:School{id:"MFAprogrammeDetaille",title:
  
 create (gaspiPhenix:Gaspillage{id:"gaspiPhenix",title:"",color:"",url:"https://globalgoodness.ca/phenix-une-application-anti-gaspillage/?gclid=Cj0KCQiAjJOQBhCkARIsAEKMtO02vd3-hbajei3MpyOc3qr-YX89Sv7TDS6KCVjuudRiNwRW8jD2TgwaAgU6EALw_wcB",comments:"gaspiPhenix"})
 
- https://www.nousantigaspi.com/
+ //https://www.nousantigaspi.com/
 create (nsAntiGaspi:Gaspillage{id:"nsAntiGaspi",title:"",color:"",url:"
  https://www.nousantigaspi.com/",comments:"nsAntiGaspi"})
 
